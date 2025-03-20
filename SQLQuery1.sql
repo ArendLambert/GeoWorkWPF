@@ -99,8 +99,7 @@ ID_Employee INT FOREIGN KEY REFERENCES Employee(ID_Employee) ON DELETE CASCADE O
 ID_Project INT FOREIGN KEY REFERENCES Project(ID_Project),
 ReportFile nvarchar(MAX)
 );
-
--- Добавление ограничений NOT NULL
+-- РР·РјРµРЅРµРЅРёРµ СЃС‚РѕР»Р±С†РѕРІ РЅР° NOT NULL
 ALTER TABLE AccessLevel ALTER COLUMN [Name] NVARCHAR(50) NOT NULL;
 ALTER TABLE AccessLevel ALTER COLUMN [Description] NVARCHAR(255) NOT NULL;
 
@@ -141,13 +140,25 @@ ALTER TABLE PicketCoordinates ALTER COLUMN Y FLOAT NOT NULL;
 
 ALTER TABLE Report ALTER COLUMN ReportFile NVARCHAR(MAX) NOT NULL;
 
--- Добавление уникальных ограничений
+-- Р”РѕР±Р°РІР»РµРЅРёРµ СѓРЅРёРєР°Р»СЊРЅС‹С… РѕРіСЂР°РЅРёС‡РµРЅРёР№
 ALTER TABLE Employee ADD CONSTRAINT UQ_Employee_Passport UNIQUE (Passport);
 ALTER TABLE Equipment ADD CONSTRAINT UQ_Equipment_SerialNumber UNIQUE (SerialNumber);
 
--- Добавление ограничений FOREIGN KEY для недостающих связей с ON DELETE NO ACTION
-ALTER TABLE Picket ADD CONSTRAINT FK_Picket_Profile FOREIGN KEY (ID_profile) REFERENCES [Profile](ID_profile) ON DELETE NO ACTION;
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РІРЅРµС€РЅРёС… РєР»СЋС‡РµР№ СЃ ON DELETE NO ACTION
+ALTER TABLE Picket 
+ADD CONSTRAINT FK_Picket_Profile 
+FOREIGN KEY (ID_profile) 
+REFERENCES [Profile](ID_profile) 
+ON DELETE NO ACTION;
 
-ALTER TABLE [Point] ADD CONSTRAINT FK_Point_Picket FOREIGN KEY (ID_Picket) REFERENCES Picket(ID_Picket) ON DELETE CASCADE;
+ALTER TABLE [Point] 
+ADD CONSTRAINT FK_Point_Picket 
+FOREIGN KEY (ID_Picket) 
+REFERENCES Picket(ID_Picket) 
+ON DELETE NO ACTION;
 
-ALTER TABLE Report ADD CONSTRAINT FK_Report_Project FOREIGN KEY (ID_Project) REFERENCES Project(ID_Project) ON DELETE CASCADE;
+ALTER TABLE Report 
+ADD CONSTRAINT FK_Report_Project 
+FOREIGN KEY (ID_Project) 
+REFERENCES Project(ID_Project) 
+ON DELETE NO ACTION;

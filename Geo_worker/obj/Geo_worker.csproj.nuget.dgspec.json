@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\Geo_worker.csproj": {}
+    "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\Geo_worker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj": {
+    "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\cikor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\obj\\",
+        "projectPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\kolosocc\\.nuget\\packages\\",
+        "outputPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio 2022\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cikor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kolosocc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,8 +43,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -65,24 +64,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\cikor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\kolosocc\\.nuget\\packages\\",
+        "outputPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio 2022\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cikor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kolosocc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,8 +96,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj"
+              "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj": {
+                "projectPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj"
               }
             }
           }
@@ -112,8 +111,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -140,24 +138,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\Geo_worker.csproj": {
+    "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\Geo_worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\Geo_worker.csproj",
+        "projectUniqueName": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\Geo_worker.csproj",
         "projectName": "Geo_worker",
-        "projectPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\Geo_worker.csproj",
-        "packagesPath": "C:\\Users\\cikor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\obj\\",
+        "projectPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\Geo_worker.csproj",
+        "packagesPath": "C:\\Users\\kolosocc\\.nuget\\packages\\",
+        "outputPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio 2022\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cikor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kolosocc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,8 +170,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -187,8 +185,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -238,7 +235,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

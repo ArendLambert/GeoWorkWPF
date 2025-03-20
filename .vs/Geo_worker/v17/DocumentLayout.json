@@ -1,125 +1,125 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\",
+  "WorkspaceRootPath": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\repositories\\areacoordinaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\areacoordinaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\core\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\repositories\\accesslevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\accesslevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\core\\models\\areacoordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\areacoordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\core\\models\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\customertypeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customertypeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\areacoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\areacoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\abstractions\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\abstractions\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\accesslevelentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\accesslevelentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\geo_worker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\profilecoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\profilecoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\profileentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\profileentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\squareentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\squareentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\positionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\positionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\pointentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\pointentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\picketentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\picketentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\picketcoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\picketcoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\finallyboryakin2207g2_gravitysurveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\finallyboryakin2207g2_gravitysurveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\equipmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\equipmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\entities\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\geo_worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\geo_worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\geo_worker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\abstractions\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\abstractions\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\squareentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\squareentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\core\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\repositories\\areacoordinaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\areacoordinaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\repositories\\accesslevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\accesslevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\core\\models\\areacoordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\areacoordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\core\\models\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\customertypeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customertypeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\areacoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\areacoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\accesslevelentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\accesslevelentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\geo_worker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\profilecoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\profilecoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\profileentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\profileentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\positionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\positionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\pointentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\pointentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\picketentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\picketentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\picketcoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\picketcoordinateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\finallyboryakin2207g2_gravitysurveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\finallyboryakin2207g2_gravitysurveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\equipmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\equipmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\entities\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\geo_worker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geo_work_wp-master\\geo_worker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\project_it\\csh\\2024(2)\\geoboriacin\\geoworkwpf\\geo_worker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -130,106 +130,144 @@
       "DocumentGroups": [
         {
           "DockedWidth": 139,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Repositories\\CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Repositories\\CustomerRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDkAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T14:14:15.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Models\\Customer.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Models\\Customer.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Models\\Customer.cs",
               "RelativeToolTip": "Core\\Models\\Customer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T14:10:32.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AreaCoordinateRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwDkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:19:54.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AreaCoordinate.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Models\\AreaCoordinate.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\AreaCoordinate.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Models\\AreaCoordinate.cs",
-              "RelativeToolTip": "Core\\Models\\AreaCoordinate.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:16:41.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CustomerEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\CustomerEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\CustomerEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\CustomerEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\CustomerEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\CustomerEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\CustomerEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T06:42:58.973Z",
+              "WhenOpened": "2025-03-18T06:42:58.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccessLevelRepository.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:41:22.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Abstractions\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Abstractions\\BaseRepository.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Abstractions\\BaseRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Abstractions\\BaseRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:40:00.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AccessLevelRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwC8AAAAMAAAAAAAAAA==",
+              "Title": "SquareEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\SquareEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\SquareEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\SquareEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\SquareEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T06:41:22.762Z",
+              "WhenOpened": "2025-03-18T06:43:39.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerTypeEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T06:43:01.909Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\appsettings.json",
+              "RelativeDocumentMoniker": "Geo_worker\\appsettings.json",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\appsettings.json",
+              "RelativeToolTip": "Geo_worker\\appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-15T17:08:23.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AreaCoordinate.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Models\\AreaCoordinate.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\AreaCoordinate.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Models\\AreaCoordinate.cs",
+              "RelativeToolTip": "Core\\Models\\AreaCoordinate.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:16:41.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AreaCoordinateRepository.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\AreaCoordinateRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:19:54.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerTypeEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\CustomerTypeEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:43:01.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AreaCoordinateEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\AreaCoordinateEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\AreaCoordinateEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\AreaCoordinateEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\AreaCoordinateEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\AreaCoordinateEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\AreaCoordinateEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,24 +275,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "AccessLevel.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Models\\AccessLevel.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Models\\AccessLevel.cs",
               "RelativeDocumentMoniker": "Core\\Models\\AccessLevel.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Models\\AccessLevel.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Models\\AccessLevel.cs",
               "RelativeToolTip": "Core\\Models\\AccessLevel.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T06:47:34.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T06:47:34.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Interfaces\\IRepository.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\Interfaces\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -262,23 +299,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Abstractions\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Abstractions\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Abstractions\\BaseRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Abstractions\\BaseRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:40:00.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AccessLevelEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\AccessLevelEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\AccessLevelEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\AccessLevelEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\AccessLevelEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\AccessLevelEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\AccessLevelEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -286,11 +311,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\MainWindow.xaml.cs",
               "RelativeToolTip": "Geo_worker\\MainWindow.xaml.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAA1wCIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -298,11 +323,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Geo_worker.csproj",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\Geo_worker.csproj",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\Geo_worker.csproj",
               "RelativeDocumentMoniker": "Geo_worker\\Geo_worker.csproj",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\Geo_worker.csproj",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\Geo_worker.csproj",
               "RelativeToolTip": "Geo_worker\\Geo_worker.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -310,11 +335,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ProfileCoordinateEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\ProfileCoordinateEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\ProfileCoordinateEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\ProfileCoordinateEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\ProfileCoordinateEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\ProfileCoordinateEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\ProfileCoordinateEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -322,11 +347,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ProfileEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\ProfileEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\ProfileEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\ProfileEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\ProfileEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\ProfileEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\ProfileEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -334,23 +359,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SquareEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\SquareEntity.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\SquareEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\SquareEntity.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\SquareEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T06:43:39.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ProjectEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\ProjectEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\ProjectEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\ProjectEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\ProjectEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\ProjectEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\ProjectEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -358,11 +371,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "PositionEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PositionEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PositionEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PositionEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PositionEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PositionEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\PositionEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -370,11 +383,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "PointEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PointEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PointEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PointEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PointEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PointEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\PointEntity.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAA9wAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -382,11 +395,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PicketEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PicketEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PicketEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PicketEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PicketEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PicketEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\PicketEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -394,11 +407,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PicketCoordinateEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PicketCoordinateEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PicketCoordinateEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PicketCoordinateEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\PicketCoordinateEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\PicketCoordinateEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\PicketCoordinateEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -406,11 +419,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "FinallyBoryakin2207g2_GravitySurveyContext.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\FinallyBoryakin2207g2_GravitySurveyContext.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\FinallyBoryakin2207g2_GravitySurveyContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\FinallyBoryakin2207g2_GravitySurveyContext.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\FinallyBoryakin2207g2_GravitySurveyContext.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\FinallyBoryakin2207g2_GravitySurveyContext.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\FinallyBoryakin2207g2_GravitySurveyContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -418,11 +431,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "EquipmentEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\EquipmentEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\EquipmentEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\EquipmentEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\EquipmentEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\EquipmentEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\EquipmentEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -430,11 +443,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "EmployeeEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\EmployeeEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\EmployeeEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -442,11 +455,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -454,11 +467,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Core.csproj",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj",
               "RelativeDocumentMoniker": "Core\\Core.csproj",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Core\\Core.csproj",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Core\\Core.csproj",
               "RelativeToolTip": "Core\\Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -468,9 +481,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\App.xaml",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\App.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\App.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\App.xaml",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\App.xaml",
               "RelativeToolTip": "Geo_worker\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-06T13:16:25.708Z"
@@ -479,24 +492,22 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\MainWindow.xaml",
+              "ToolTip": "C:\\Project_IT\\Csh\\2024(2)\\GEOBORIACIN\\GeoWorkWPF\\Geo_worker\\MainWindow.xaml",
               "RelativeToolTip": "Geo_worker\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-06T13:11:23.15Z"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 199,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\appsettings.json",
-              "RelativeDocumentMoniker": "Geo_worker\\appsettings.json",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\geo_work_WP-master\\Geo_worker\\appsettings.json",
-              "RelativeToolTip": "Geo_worker\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-15T17:08:23.004Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
