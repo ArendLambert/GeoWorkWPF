@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccessLayer.Entities;
 using Microsoft.EntityFrameworkCore;
-using Geo_worker.Core.Models;
 using DataAccessLayer.Interfaces;
 using DataAccessLayer.Abstractions;
 using System.Diagnostics;

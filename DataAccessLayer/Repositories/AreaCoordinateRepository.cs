@@ -8,7 +8,6 @@ using Core.Models;
 using DataAccessLayer.Abstractions;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Interfaces;
-using Geo_worker.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Repositories

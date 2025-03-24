@@ -29,3 +29,4 @@ C:\Users\cikor\Desktop\GeoWorkWPF-master\DataAccessLayer\obj\Debug\net8.0\DataAc
 C:\Users\cikor\Desktop\GeoWorkWPF-master\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
 C:\Users\cikor\Desktop\GeoWorkWPF-master\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\cikor\Desktop\GeoWorkWPF-master\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\cikor\Desktop\GeoWorkWPF-master\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

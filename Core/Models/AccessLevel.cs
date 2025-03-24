@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Geo_worker.Core.Models
+namespace Core.Models
 {
     public class AccessLevel
     {
