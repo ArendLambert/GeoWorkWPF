@@ -13,7 +13,7 @@ namespace DataAccessLayer.Entities
             : base(options)
         {
         }
-
+        public virtual DbSet<AuditLog> AuditLogs { get; set; }
         public virtual DbSet<AccessLevelEntity> AccessLevels { get; set; }
         public virtual DbSet<AreaCoordinateEntity> AreaCoordinates { get; set; }
         public virtual DbSet<CustomerEntity> Customers { get; set; }

@@ -666,3 +666,4 @@ C:\Project_IT\Csh\2024(2)\GEO\GeoWorkWPF\Geo_worker\bin\Debug\net8.0-windows\Mic
 C:\Project_IT\Csh\2024(2)\GEO\GeoWorkWPF\Geo_worker\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
 C:\Project_IT\Csh\2024(2)\GEO\GeoWorkWPF\Geo_worker\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 C:\Project_IT\Csh\2024(2)\GEO\GeoWorkWPF\Geo_worker\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Project_IT\Csh\2024(2)\GEO\GeoWorkWPF\Geo_worker\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
