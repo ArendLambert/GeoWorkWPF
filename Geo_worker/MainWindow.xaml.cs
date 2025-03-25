@@ -33,7 +33,8 @@ public partial class MainWindow : Window
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
         DataContext = this;
 
-        BDAdding();
+        //DBAdding().GetAwaiter();
+        //DBClear().GetAwaiter();
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -41,10 +42,13 @@ public partial class MainWindow : Window
 
     }
 
-    private void BDAdding()
+    private async Task DBAdding()
     {
-        SyntheticData.CreateAll();
+        await SyntheticData.CreateAll();
+    }
 
-
+    private async Task DBClear()
+    {
+        await SyntheticData.DeleteAll();
     }
 }

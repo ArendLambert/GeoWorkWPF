@@ -54,14 +54,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var point = await _context.Points.FindAsync(id);
-            if (point != null)
+            try
             {
-                _context.Points.Remove(point);
-                await _context.SaveChangesAsync();
-                return;
+                var point = await _context.Points.FindAsync(id);
+                if (point != null)
+                {
+                    _context.Points.Remove(point);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {Point repository delete}");
             }
-            Debug.WriteLine("Entity not found {Point repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<Core.Models.Point>> GetAll()

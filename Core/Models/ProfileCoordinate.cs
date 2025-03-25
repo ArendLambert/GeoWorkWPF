@@ -16,17 +16,17 @@ namespace Core.Models
 
         public double Y { get; private set; }
 
-        private ProfileCoordinate(int idRecord, int? idProfile, double x, double y)
+        private ProfileCoordinate(int id, int? idProfile, double x, double y)
         {
-            Id = idRecord;
+            Id = id;
             IdProfile = idProfile;
             X = x;
             Y = y;
         }
 
-        public static ProfileCoordinate Create(int idRecord, int? idProfile, double x, double y)
+        public static ProfileCoordinate Create(int id, int? idProfile, double x, double y)
         {
-            return new ProfileCoordinate(idRecord, idProfile, x, y);
+            return new ProfileCoordinate(id, idProfile, x, y);
         }
     }
 }

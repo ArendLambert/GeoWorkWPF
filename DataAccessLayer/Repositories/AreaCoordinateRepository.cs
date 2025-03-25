@@ -41,14 +41,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var areaCoordinates = await _context.AreaCoordinates.FindAsync(id);
-            if (areaCoordinates != null)
+            try
             {
-                _context.AreaCoordinates.Remove(areaCoordinates);
-                await _context.SaveChangesAsync();
-                return;
+                var areaCoordinates = await _context.AreaCoordinates.FindAsync(id);
+                if (areaCoordinates != null)
+                {
+                    _context.AreaCoordinates.Remove(areaCoordinates);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {AreaCoordinates repository delete}");
             }
-            Debug.WriteLine("Entity not found {AreaCoordinates repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<AreaCoordinate>> GetAll()

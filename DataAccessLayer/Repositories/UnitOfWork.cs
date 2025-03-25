@@ -22,7 +22,7 @@ namespace DataAccessLayer.Repositories
         public static IRepository<Point> PointRepository { get; } = new PointRepository(new GravitySurveyOnDeleteNoAction());
         public static IRepository<Position> PositionRepository { get; } = new PositionRepository(new GravitySurveyOnDeleteNoAction());
         public static IRepository<Profile> ProfileRepository { get; } = new ProfileRepository(new GravitySurveyOnDeleteNoAction());
-        public static IRepository<ProfileCoordinate>? ProfileCoordinateRepository { get; } = new ProfileCoordinateRepository(new GravitySurveyOnDeleteNoAction());
+        public static IRepository<ProfileCoordinate> ProfileCoordinateRepository { get; } = new ProfileCoordinateRepository(new GravitySurveyOnDeleteNoAction());
         public static IRepository<Project> ProjectRepository { get; } = new ProjectRepository(new GravitySurveyOnDeleteNoAction());
         public static IRepository<Report> ReportRepository { get; } = new ReportRepository(new GravitySurveyOnDeleteNoAction());
         public static IRepository<Square> SquareRepository { get; } = new SquareRepository(new GravitySurveyOnDeleteNoAction());

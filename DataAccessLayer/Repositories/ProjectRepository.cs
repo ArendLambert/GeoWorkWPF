@@ -46,14 +46,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var project = await _context.Projects.FindAsync(id);
-            if (project != null)
+            try
             {
-                _context.Projects.Remove(project);
-                await _context.SaveChangesAsync();
-                return;
+                var project = await _context.Projects.FindAsync(id);
+                if (project != null)
+                {
+                    _context.Projects.Remove(project);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {Project repository delete}");
             }
-            Debug.WriteLine("Entity not found {Project repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<Project>> GetAll()

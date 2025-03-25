@@ -46,14 +46,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var square = await _context.Squares.FindAsync(id);
-            if (square != null)
+            try
             {
-                _context.Squares.Remove(square);
-                await _context.SaveChangesAsync();
-                return;
+                var square = await _context.Squares.FindAsync(id);
+                if (square != null)
+                {
+                    _context.Squares.Remove(square);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {Square repository delete}");
             }
-            Debug.WriteLine("Entity not found {Square repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<Square>> GetAll()

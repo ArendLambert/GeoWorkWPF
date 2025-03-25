@@ -43,14 +43,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var picket = await _context.Pickets.FindAsync(id);
-            if (picket != null)
+            try
             {
-                _context.Pickets.Remove(picket);
-                await _context.SaveChangesAsync();
-                return;
+                var picket = await _context.Pickets.FindAsync(id);
+                if (picket != null)
+                {
+                    _context.Pickets.Remove(picket);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {Picket repository delete}");
             }
-            Debug.WriteLine("Entity not found {Picket repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<Picket>> GetAll()

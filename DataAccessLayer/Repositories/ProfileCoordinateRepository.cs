@@ -24,7 +24,7 @@ namespace DataAccessLayer.Repositories
             {
                 var profileCoordinate = new ProfileCoordinateEntity
                 {
-                    IdProfile = entity.Id,
+                    IdProfile = entity.IdProfile,
                     X = entity.X,
                     Y = entity.Y
                 };
@@ -46,14 +46,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var profileCoordinate = await _context.ProfileCoordinates.FindAsync(id);
-            if (profileCoordinate != null)
+            try
             {
-                _context.ProfileCoordinates.Remove(profileCoordinate);
-                await _context.SaveChangesAsync();
-                return;
+                var profileCoordinate = await _context.ProfileCoordinates.FindAsync(id);
+                if (profileCoordinate != null)
+                {
+                    _context.ProfileCoordinates.Remove(profileCoordinate);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {ProfileCoordinate repository delete}");
             }
-            Debug.WriteLine("Entity not found {ProfileCoordinate repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<ProfileCoordinate>> GetAll()

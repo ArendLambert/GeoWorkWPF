@@ -41,14 +41,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task Delete(int id)
         {
-            var customerType = await _context.CustomerTypes.FindAsync(id);
-            if (customerType != null)
+            try
             {
-                _context.CustomerTypes.Remove(customerType);
-                await _context.SaveChangesAsync();
-                return;
+                var customerType = await _context.CustomerTypes.FindAsync(id);
+                if (customerType != null)
+                {
+                    _context.CustomerTypes.Remove(customerType);
+                    await _context.SaveChangesAsync();
+                    return;
+                }
+                Debug.WriteLine("Entity not found {CustomerType repository delete}");
             }
-            Debug.WriteLine("Entity not found {CustomerType repository delete}");
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during deleting: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    Debug.WriteLine($"Stack trace: {ex.InnerException.StackTrace}");
+                }
+            }
         }
 
         public async Task<List<CustomerType>> GetAll()
