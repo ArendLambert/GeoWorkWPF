@@ -10,18 +10,18 @@ namespace Core.Models
     {
         public int Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string Name { get; private set; }
 
         public int? IdSquare { get; private set; }
 
-        private Profile(int id, string? name, int? idSquare)
+        private Profile(int id, string name, int? idSquare)
         {
             Id = id;
             Name = name;
             IdSquare = idSquare;
         }
 
-        public static Profile Create(int id, string? name, int? idSquare)
+        public static Profile Create(int id, string name, int? idSquare)
         {
             return new Profile(id, name, idSquare);
         }

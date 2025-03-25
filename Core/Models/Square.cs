@@ -10,13 +10,13 @@ namespace Core.Models
     {
         public int Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string Name { get; private set; }
 
-        public int? Alitude { get; private set; }
+        public int Alitude { get; private set; }
 
         public int? IdProject { get; private set; }
 
-        private Square(int id, string? name, int? alitude, int? idProject)
+        private Square(int id, string name, int alitude, int? idProject)
         {
             Id = id;
             Name = name;
@@ -24,7 +24,7 @@ namespace Core.Models
             IdProject = idProject;
         }
 
-        public static Square Create(int id, string? name, int? alitude, int? idProject)
+        public static Square Create(int id, string name, int alitude, int? idProject)
         {
             return new Square(id, name, alitude, idProject);
         }

@@ -10,16 +10,16 @@ namespace Core.Models
     {
         public int Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string Name { get; private set; }
 
-        public string? SerialNumber { get; private set; }
+        public string SerialNumber { get; private set; }
 
-        private Equipment(int idEquipment, string? name, string? serialNumber)
+        private Equipment(int idEquipment, string name, string serialNumber)
         {
             Id = idEquipment; Name = name; SerialNumber = serialNumber;
         }
 
-        public static Equipment Create(int idEquipment, string? name, string? serialNumber)
+        public static Equipment Create(int idEquipment, string name, string serialNumber)
         {
             return new Equipment(idEquipment, name, serialNumber);
         }

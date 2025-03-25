@@ -12,16 +12,18 @@ namespace Core.Models
 
         public int? IdSquare { get; private set; }
 
-        public double? X { get; private set; }
+        public double X { get; private set; }
 
-        public double? Y { get; private set; }
+        public double Y { get; private set; }
 
-        private AreaCoordinate(int id, int? idSquare, double? x, double? y)
+        private AreaCoordinate(int id, int? idSquare, double x, double y)
         {
-            Id = id; IdSquare = idSquare; X = x; Y = y;
+            Id = id; 
+            IdSquare = idSquare; 
+            X = x; Y = y;
         }
 
-        public static AreaCoordinate Create(int id, int? idSquare, double? x, double? y)
+        public static AreaCoordinate Create(int id, int? idSquare, double x, double y)
         {
             return new AreaCoordinate(id, idSquare, x, y);
         }

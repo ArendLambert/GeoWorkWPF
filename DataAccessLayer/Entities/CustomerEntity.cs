@@ -7,6 +7,12 @@ public partial class CustomerEntity
 {
     public int IdCustomer { get; set; }
 
+    public string Name { get; set; } = null!;
+
+    public string Password { get; set; } = null!;
+
+    public string Login { get; set; } = null!;
+
     public int? IdType { get; set; }
 
     public virtual CustomerTypeEntity? IdTypeNavigation { get; set; }

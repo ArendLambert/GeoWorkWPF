@@ -7,9 +7,9 @@ public partial class SquareEntity
 {
     public int IdSquare { get; set; }
 
-    public string? Name { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
-    public int? Alitude { get; set; }
+    public int Alitude { get; set; }
 
     public int? IdProject { get; set; }
 

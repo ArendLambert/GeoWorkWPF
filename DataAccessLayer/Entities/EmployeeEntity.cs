@@ -9,6 +9,10 @@ public partial class EmployeeEntity
 
     public string Passport { get; set; } = null!;
 
+    public string Password { get; set; } = null!;
+
+    public string Login { get; set; } = null!;
+
     public int? IdPosition { get; set; }
 
     public virtual PositionEntity? IdPositionNavigation { get; set; }

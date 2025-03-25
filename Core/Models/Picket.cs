@@ -10,18 +10,18 @@ namespace Core.Models
     {
         public int Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string Name { get; private set; }
 
         public int? IdProfile { get; private set; }
 
-        private Picket (int id, string? name, int? idProfile)
+        private Picket (int id, string name, int? idProfile)
         {
             Id = id;
             Name = name;
             IdProfile = idProfile;
         }
 
-        public static Picket Create(int id, string? name, int? idProfile)
+        public static Picket Create(int id, string name, int? idProfile)
         {
             return new Picket(id, name, idProfile);
         }

@@ -10,13 +10,13 @@ namespace Core.Models
     {
         public int Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string Name { get; private set; }
 
         public int? IdCustomer { get; private set; }
 
         public int? IdEmployee { get; private set; }
 
-        private Project(int id, string? name, int? idCustomer, int? idEmployee)
+        private Project(int id, string name, int? idCustomer, int? idEmployee)
         {
             Id = id;
             Name = name;
@@ -24,7 +24,7 @@ namespace Core.Models
             IdEmployee = idEmployee;
         }
 
-        public static Project Create(int id, string? name, int? idCustomer, int? idEmployee)
+        public static Project Create(int id, string name, int? idCustomer, int? idEmployee)
         {
             return new Project(id, name, idCustomer, idEmployee);
         }

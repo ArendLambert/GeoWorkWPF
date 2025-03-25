@@ -25,7 +25,9 @@ namespace DataAccessLayer.Repositories
                 var employeeEntity = new EmployeeEntity
                 {
                     Passport = entity.Passport,
-                    IdPosition = entity.IdPosition
+                    IdPosition = entity.IdPosition,
+                    Password = entity.Password,
+                    Login = entity.Login
                 };
 
                 await _context.Employees.AddAsync(employeeEntity);
@@ -62,7 +64,7 @@ namespace DataAccessLayer.Repositories
                 .ToListAsync();
 
             return customerTypes.Select(a => Employee
-                .Create(a.IdEmployee, a.Passport, a.IdPosition))
+                .Create(a.IdEmployee, a.Passport, a.IdPosition, a.Password, a.Login))
                 .ToList();
         }
 
@@ -72,7 +74,7 @@ namespace DataAccessLayer.Repositories
 
             if (employee != null)
             {
-                return Employee.Create(employee.IdEmployee, employee.Passport, employee.IdPosition);
+                return Employee.Create(employee.IdEmployee, employee.Passport, employee.IdPosition, employee.Password, employee.Login);
             }
             return null;
         }
@@ -84,6 +86,8 @@ namespace DataAccessLayer.Repositories
             {
                 existingEntity.Passport = entity.Passport;
                 existingEntity.IdPosition = entity.IdPosition;
+                existingEntity.Password = entity.Password;
+                existingEntity.Login = entity.Login;
                 await _context.SaveChangesAsync();
             }
         }

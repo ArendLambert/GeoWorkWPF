@@ -26,7 +26,7 @@ namespace DataAccessLayer.Repositories
                 {
                     Name = entity.Name,
                     Alitude = entity.Alitude,
-                    IdProject = entity.Id,
+                    IdProject = entity.IdProject,
                 };
 
                 await _context.Squares.AddAsync(project);

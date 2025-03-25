@@ -7,17 +7,17 @@ public partial class PointEntity
 {
     public int IdPoint { get; set; }
 
-    public double? X { get; set; }
+    public double X { get; set; }
 
-    public double? Y { get; set; }
+    public double Y { get; set; }
 
-    public double? Gravity { get; set; }
+    public double Gravity { get; set; }
 
-    public double? GravityAnomaly { get; set; }
+    public double GravityAnomaly { get; set; }
 
-    public double? Amendments { get; set; }
+    public double Amendments { get; set; }
 
-    public DateTime? Datetime { get; set; }
+    public DateTime Datetime { get; set; }
 
     public int? IdOperator { get; set; }
 

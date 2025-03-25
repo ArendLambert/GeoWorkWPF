@@ -33,7 +33,7 @@ public partial class MainWindow : Window
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
         DataContext = this;
 
-        //BDAdding();
+        BDAdding();
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)

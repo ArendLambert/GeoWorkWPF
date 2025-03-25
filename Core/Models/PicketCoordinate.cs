@@ -12,16 +12,16 @@ namespace Core.Models
 
         public int? IdPicket { get; private set; }
 
-        public double? X { get; private set; }
+        public double X { get; private set; }
 
-        public double? Y { get; private set; }
+        public double Y { get; private set; }
 
-        private PicketCoordinate(int id, int? idPicket, double? x, double? y)
+        private PicketCoordinate(int id, int? idPicket, double x, double y)
         {
             Id = id; IdPicket = idPicket; X = x; Y = y;
         }
 
-        public static PicketCoordinate Create(int id, int? idPicket, double? x, double? y)
+        public static PicketCoordinate Create(int id, int? idPicket, double x, double y)
         {
             return new PicketCoordinate(id, idPicket, x, y);
         }

@@ -46,14 +46,13 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
     public virtual DbSet<SquareEntity> Squares { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=GravitySurveyOnDeleteNoAction;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AccessLevelEntity>(entity =>
         {
-            entity.HasKey(e => e.IdAccessLevel).HasName("PK__AccessLe__4415BDCE090C6130");
+            entity.HasKey(e => e.IdAccessLevel).HasName("PK__AccessLe__4415BDCE81113723");
 
             entity.ToTable("AccessLevel");
 
@@ -64,35 +63,38 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
         modelBuilder.Entity<AreaCoordinateEntity>(entity =>
         {
-            entity.HasKey(e => e.IdRecord).HasName("PK__AreaCoor__1070D2CEC8CB031A");
+            entity.HasKey(e => e.IdRecord).HasName("PK__AreaCoor__1070D2CE315F2E47");
 
             entity.Property(e => e.IdRecord).HasColumnName("ID_Record");
             entity.Property(e => e.IdSquare).HasColumnName("ID_Square");
 
             entity.HasOne(d => d.IdSquareNavigation).WithMany(p => p.AreaCoordinates)
                 .HasForeignKey(d => d.IdSquare)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__AreaCoord__ID_Sq__571DF1D5");
         });
 
         modelBuilder.Entity<CustomerEntity>(entity =>
         {
-            entity.HasKey(e => e.IdCustomer).HasName("PK__Customer__2D8FDE5FE0AFE17C");
+            entity.HasKey(e => e.IdCustomer).HasName("PK__Customer__2D8FDE5F221E2EF8");
 
             entity.ToTable("Customer");
 
             entity.Property(e => e.IdCustomer).HasColumnName("ID_Customer");
             entity.Property(e => e.IdType).HasColumnName("ID_Type");
+            entity.Property(e => e.Login).HasMaxLength(50);
+            entity.Property(e => e.Name).HasMaxLength(100);
+            entity.Property(e => e.Password).HasMaxLength(255);
 
             entity.HasOne(d => d.IdTypeNavigation).WithMany(p => p.Customers)
                 .HasForeignKey(d => d.IdType)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Customer__ID_Typ__412EB0B6");
         });
 
         modelBuilder.Entity<CustomerTypeEntity>(entity =>
         {
-            entity.HasKey(e => e.IdCustomerType).HasName("PK__Customer__FF17D67D56C98043");
+            entity.HasKey(e => e.IdCustomerType).HasName("PK__Customer__FF17D67D12A9CC9A");
 
             entity.ToTable("CustomerType");
 
@@ -102,7 +104,7 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
         modelBuilder.Entity<EmployeeEntity>(entity =>
         {
-            entity.HasKey(e => e.IdEmployee).HasName("PK__Employee__D9EE4F36AB13845A");
+            entity.HasKey(e => e.IdEmployee).HasName("PK__Employee__D9EE4F36AEF4E829");
 
             entity.ToTable("Employee");
 
@@ -110,17 +112,19 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.Property(e => e.IdEmployee).HasColumnName("ID_Employee");
             entity.Property(e => e.IdPosition).HasColumnName("ID_Position");
+            entity.Property(e => e.Login).HasMaxLength(50);
             entity.Property(e => e.Passport).HasMaxLength(100);
+            entity.Property(e => e.Password).HasMaxLength(255);
 
             entity.HasOne(d => d.IdPositionNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.IdPosition)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Employee__ID_Pos__3C69FB99");
         });
 
         modelBuilder.Entity<EquipmentEntity>(entity =>
         {
-            entity.HasKey(e => e.IdEquipment).HasName("PK__Equipmen__4DDD08B2501A5B44");
+            entity.HasKey(e => e.IdEquipment).HasName("PK__Equipmen__4DDD08B2A7301B37");
 
             entity.HasIndex(e => e.SerialNumber, "UQ_Equipment_SerialNumber").IsUnique();
 
@@ -131,9 +135,9 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
         modelBuilder.Entity<PicketEntity>(entity =>
         {
-            entity.HasKey(e => e.IdPicket).HasName("PK__Picket__4B9DFA2E9A93D7D4");
+            entity.HasKey(e => e.IdPicket).HasName("PK__Picket__4B9DFA2EAAFAB07F");
 
-            entity.ToTable("Picket");
+            entity.ToTable("Picket", tb => tb.HasTrigger("TR_Picket_Delete"));
 
             entity.Property(e => e.IdPicket).HasColumnName("ID_Picket");
             entity.Property(e => e.IdProfile).HasColumnName("ID_profile");
@@ -141,26 +145,25 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdProfileNavigation).WithMany(p => p.Pickets)
                 .HasForeignKey(d => d.IdProfile)
-                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK__Picket__ID_profi__4F7CD00D");
         });
 
         modelBuilder.Entity<PicketCoordinateEntity>(entity =>
         {
-            entity.HasKey(e => e.IdRecord).HasName("PK__PicketCo__1070D2CEF7D4EA98");
+            entity.HasKey(e => e.IdRecord).HasName("PK__PicketCo__1070D2CE871BC957");
 
             entity.Property(e => e.IdRecord).HasColumnName("ID_Record");
             entity.Property(e => e.IdPicket).HasColumnName("ID_Picket");
 
             entity.HasOne(d => d.IdPicketNavigation).WithMany(p => p.PicketCoordinates)
                 .HasForeignKey(d => d.IdPicket)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__PicketCoo__ID_Pi__5CD6CB2B");
         });
 
         modelBuilder.Entity<PointEntity>(entity =>
         {
-            entity.HasKey(e => e.IdPoint).HasName("PK__Point__26035707E6DE79E7");
+            entity.HasKey(e => e.IdPoint).HasName("PK__Point__2603570771868D52");
 
             entity.ToTable("Point");
 
@@ -172,12 +175,12 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdEquipmentNavigation).WithMany(p => p.Points)
                 .HasForeignKey(d => d.IdEquipment)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Point__ID_Equipm__534D60F1");
 
             entity.HasOne(d => d.IdOperatorNavigation).WithMany(p => p.Points)
                 .HasForeignKey(d => d.IdOperator)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Point__ID_Operat__52593CB8");
 
             entity.HasOne(d => d.IdPicketNavigation).WithMany(p => p.Points)
@@ -187,7 +190,7 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
         modelBuilder.Entity<PositionEntity>(entity =>
         {
-            entity.HasKey(e => e.IdPosition).HasName("PK__Position__8F963ECEB075C8DE");
+            entity.HasKey(e => e.IdPosition).HasName("PK__Position__8F963ECE0F30543D");
 
             entity.ToTable("Position");
 
@@ -197,13 +200,13 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdAccessLevelNavigation).WithMany(p => p.Positions)
                 .HasForeignKey(d => d.IdAccessLevel)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Position__ID_Acc__398D8EEE");
         });
 
         modelBuilder.Entity<ProfileEntity>(entity =>
         {
-            entity.HasKey(e => e.IdProfile).HasName("PK__Profile__CB159EAA0B8D8EC8");
+            entity.HasKey(e => e.IdProfile).HasName("PK__Profile__CB159EAA1079F955");
 
             entity.ToTable("Profile");
 
@@ -213,26 +216,26 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdSquareNavigation).WithMany(p => p.Profiles)
                 .HasForeignKey(d => d.IdSquare)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Profile__ID_Squa__4CA06362");
         });
 
         modelBuilder.Entity<ProfileCoordinateEntity>(entity =>
         {
-            entity.HasKey(e => e.IdRecord).HasName("PK__ProfileC__1070D2CE4826E03C");
+            entity.HasKey(e => e.IdRecord).HasName("PK__ProfileC__1070D2CEBD06381F");
 
             entity.Property(e => e.IdRecord).HasColumnName("ID_Record");
             entity.Property(e => e.IdProfile).HasColumnName("ID_profile");
 
             entity.HasOne(d => d.IdProfileNavigation).WithMany(p => p.ProfileCoordinates)
                 .HasForeignKey(d => d.IdProfile)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__ProfileCo__ID_pr__59FA5E80");
         });
 
         modelBuilder.Entity<ProjectEntity>(entity =>
         {
-            entity.HasKey(e => e.IdProject).HasName("PK__Project__D310AEBFA7F4FA18");
+            entity.HasKey(e => e.IdProject).HasName("PK__Project__D310AEBF3DBFC683");
 
             entity.ToTable("Project");
 
@@ -243,18 +246,18 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdCustomerNavigation).WithMany(p => p.Projects)
                 .HasForeignKey(d => d.IdCustomer)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Project__ID_Cust__45F365D3");
 
             entity.HasOne(d => d.IdEmployeeNavigation).WithMany(p => p.Projects)
                 .HasForeignKey(d => d.IdEmployee)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Project__ID_Empl__46E78A0C");
         });
 
         modelBuilder.Entity<ReportEntity>(entity =>
         {
-            entity.HasKey(e => e.IdReport).HasName("PK__Report__C62452942BD28E26");
+            entity.HasKey(e => e.IdReport).HasName("PK__Report__C6245294FE13293B");
 
             entity.ToTable("Report");
 
@@ -264,7 +267,7 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdEmployeeNavigation).WithMany(p => p.Reports)
                 .HasForeignKey(d => d.IdEmployee)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Report__ID_Emplo__5FB337D6");
 
             entity.HasOne(d => d.IdProjectNavigation).WithMany(p => p.Reports)
@@ -274,7 +277,7 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
         modelBuilder.Entity<SquareEntity>(entity =>
         {
-            entity.HasKey(e => e.IdSquare).HasName("PK__Square__02AD7928CA6DD4F9");
+            entity.HasKey(e => e.IdSquare).HasName("PK__Square__02AD7928545966E8");
 
             entity.ToTable("Square");
 
@@ -284,7 +287,7 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
             entity.HasOne(d => d.IdProjectNavigation).WithMany(p => p.Squares)
                 .HasForeignKey(d => d.IdProject)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Square__ID_Proje__49C3F6B7");
         });
 

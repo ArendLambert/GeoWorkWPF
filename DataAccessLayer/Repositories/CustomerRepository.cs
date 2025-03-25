@@ -23,6 +23,9 @@ namespace DataAccessLayer.Repositories
                 await _context.Customers.AddAsync(new CustomerEntity
                 {
                     IdType = entity.IdType,
+                    Name = entity.Name,
+                    Password = entity.Password,
+                    Login = entity.Login
                 });
                 await _context.SaveChangesAsync();
             }
@@ -56,7 +59,7 @@ namespace DataAccessLayer.Repositories
                 .ToListAsync();
 
             return customers.Select(a => Customer
-            .Create(a.IdCustomer, a.IdType))
+            .Create(a.IdCustomer, a.IdType, a.Name, a.Password, a.Login))
                 .ToList();
         }
 
@@ -65,7 +68,7 @@ namespace DataAccessLayer.Repositories
             CustomerEntity? customer = await _context.Customers.FindAsync(id);
             if (customer != null)
             {
-                return Customer.Create(customer.IdCustomer, customer.IdType);
+                return Customer.Create(customer.IdCustomer, customer.IdType, customer.Name, customer.Password, customer.Login);
             }
             return null;       
         }
@@ -76,6 +79,9 @@ namespace DataAccessLayer.Repositories
             if (existingEntity != null)
             {
                 existingEntity.IdType = entity.IdType;
+                existingEntity.Name = entity.Name;
+                existingEntity.Password = entity.Password;
+                existingEntity.Login = entity.Login;
                 await _context.SaveChangesAsync();
             }
         }

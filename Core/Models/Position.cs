@@ -10,13 +10,13 @@ namespace Core.Models
     {
         public int Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string Name { get; private set; }
 
-        public int? Salary { get; private set; }
+        public int Salary { get; private set; }
 
         public int? IdAccessLevel { get; private set; }
 
-        private Position(int id, string? name, int? salary, int? idAccessLevel)
+        private Position(int id, string name, int salary, int? idAccessLevel)
         {
             Id = id;
             Name = name;
@@ -24,7 +24,7 @@ namespace Core.Models
             IdAccessLevel = idAccessLevel;
         }
 
-        public static Position Create(int id, string? name, int? salary, int? idAccessLevel)
+        public static Position Create(int id, string name, int salary, int? idAccessLevel)
         {
             return new Position(id, name, salary, idAccessLevel);
         }

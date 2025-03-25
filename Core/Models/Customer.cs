@@ -9,17 +9,24 @@ namespace Core.Models
     public class Customer
     {
         public int Id { get; private set; }
+        public string Name { get; private set; } = string.Empty;
+        public string Password { get; private set; } = string.Empty;
+        public string Login { get; private set; } = string.Empty;
 
         public int? IdType { get; private set; }
 
-        private Customer(int id, int? idType)
+        private Customer(int id, int? idType, string name, string password, string login)
         {
-            Id = id; IdType = idType;
+            Id = id;
+            IdType = idType;
+            Name = name;
+            Password = password;
+            Login = login;
         }
 
-        public static Customer Create(int id, int? idType)
+        public static Customer Create(int id, int? idType, string name, string password, string login)
         {
-            return new Customer(id, idType);
+            return new Customer(id, idType, name, password, login);
         }
     }
 }

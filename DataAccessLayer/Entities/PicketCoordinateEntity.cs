@@ -9,9 +9,9 @@ public partial class PicketCoordinateEntity
 
     public int? IdPicket { get; set; }
 
-    public double? X { get; set; }
+    public double X { get; set; }
 
-    public double? Y { get; set; }
+    public double Y { get; set; }
 
     public virtual PicketEntity? IdPicketNavigation { get; set; }
 }

@@ -7,9 +7,9 @@ public partial class PositionEntity
 {
     public int IdPosition { get; set; }
 
-    public string? Name { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
-    public int? Salary { get; set; }
+    public int Salary { get; set; }
 
     public int? IdAccessLevel { get; set; }
 
