@@ -212,7 +212,10 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                     </StackPanel>
                 </Border>
 
-
+                <StackPanel>
+                    <Button Content="Создать синтетические данные" Margin="10 10 10 10" Height="30" Name="Create_SyntheticData" Click="Create_SyntheticData_Click"/>
+                    <Button Content="Удалить синтетические данные" Margin="10 10 10 10" Height="30" Name="Delete_SyntheticData" Click="Delete_SyntheticData_Click"/>
+                </StackPanel>
 
 
 

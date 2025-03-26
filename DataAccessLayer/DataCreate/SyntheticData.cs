@@ -11,8 +11,10 @@ namespace Core.DataCreate
 {
     public class SyntheticData
     {
+        private static readonly Random _random = new Random();
 
         public static UnitOfWork UnitOfWork { get; private set; } = new UnitOfWork(new GravitySurveyOnDeleteNoAction(), 0);
+
         public static async Task CreateAll()
         {
             await CreateAccessLevels();
@@ -20,13 +22,13 @@ namespace Core.DataCreate
             await CreatePositions();
             await CreateEmployees();
             await CreateCustomerTypes();
-            await CreateCustomers();
+            await CreateCustomers();   // Для заказчиков и подобных используем фиксированные данные
             await CreateProjects();
             await CreateSquares();
             await CreateAreaCoordinates();
             await CreateProfiles();
-            await CreatePickets();
-            await CreatePoints();
+            await CreatePickets();       // Здесь будет генерация случайных данных
+            await CreatePoints();        // Здесь будет генерация случайных данных
             await CreatePicketCoordinate();
             await CreateProfileCoordinate();
             await CreateReport();
@@ -92,6 +94,7 @@ namespace Core.DataCreate
             }
         }
 
+        // Генерация случайных точек
         public async static Task CreatePoints()
         {
             List<Employee> employees = await UnitOfWork.EmployeeRepository.GetAll();
@@ -99,17 +102,24 @@ namespace Core.DataCreate
             List<Equipment> equipments = await UnitOfWork.EquipmentRepository.GetAll();
             int? idEmployee = employees.FirstOrDefault()?.Id;
             int? idPicket = pickets.FirstOrDefault()?.Id;
-            int? idSecondPicket = pickets.ElementAtOrDefault(1)?.Id;
             int? idEquipment = equipments.FirstOrDefault()?.Id;
-            if (idEmployee == null || idPicket == null || idEquipment == null || idSecondPicket == null)
+            if (idEmployee == null || idPicket == null || idEquipment == null)
             {
                 return;
             }
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.3, 9.7, 0, 100.3, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.0, 2.4, 9.75, 0.05, 95.7, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.5, 9.7, 0, 102.3, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.0, 2.6, 9.72, 0.02, 98.1, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.7, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+
+            // Создаём 5 точек с рандомными значениями координат и других параметров
+            for (int i = 0; i < 5; i++)
+            {
+                double x = Math.Round(_random.NextDouble() * 10, 2);
+                double y = Math.Round(_random.NextDouble() * 10, 2);
+                double z = Math.Round(_random.NextDouble() * 10 + 5, 2); // пример смещения
+                double deviation = Math.Round(_random.NextDouble() * 0.1, 2);
+                double measurement = Math.Round(_random.NextDouble() * 100 + 50, 2);
+                DateTime measurementTime = DateTime.Now;
+
+                await UnitOfWork.PointRepository.Create(Point.Create(0, x, y, z, deviation, measurement, measurementTime, idEmployee, idEquipment, idPicket));
+            }
         }
 
         public async static Task DeletePoints()
@@ -155,6 +165,7 @@ namespace Core.DataCreate
             }
         }
 
+        // Для заказчиков используем фиксированные данные
         public async static Task CreateCustomers()
         {
             List<CustomerType> customerTypes = await UnitOfWork.CustomerTypeRepository.GetAll();
@@ -217,6 +228,7 @@ namespace Core.DataCreate
             }
         }
 
+        // Генерация пикетов с использованием случайного номера
         public async static Task CreatePickets()
         {
             List<Profile> profiles = await UnitOfWork.ProfileRepository.GetAll();
@@ -225,7 +237,9 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.PicketRepository.Create(Picket.Create(0, "Picket 1", idProfile));
+            // Создаём пикет с случайным суффиксом в имени
+            string picketName = $"Picket {_random.Next(1, 100)}";
+            await UnitOfWork.PicketRepository.Create(Picket.Create(0, picketName, idProfile));
         }
 
         public async static Task DeletePickets()
@@ -291,6 +305,7 @@ namespace Core.DataCreate
             }
         }
 
+        // Для координат пикетов можно оставить фиксированные данные или добавить рандомизацию по необходимости
         public async static Task CreatePicketCoordinate()
         {
             List<Picket> pickets = await UnitOfWork.PicketRepository.GetAll();
@@ -299,7 +314,10 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, 2.0, 3.0));
+            // Пример с рандомными координатами для пикета
+            double x = Math.Round(_random.NextDouble() * 10, 2);
+            double y = Math.Round(_random.NextDouble() * 10, 2);
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, x, y));
         }
 
         public async static Task DeletePicketCoordinate()
@@ -319,7 +337,10 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile, 2.0, 3.0));
+            // Здесь можно также добавить рандомизацию, если это допустимо
+            double x = Math.Round(_random.NextDouble() * 10, 2);
+            double y = Math.Round(_random.NextDouble() * 10, 2);
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile, x, y));
         }
 
         public async static Task DeleteProfileCoordinate()

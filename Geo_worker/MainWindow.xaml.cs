@@ -35,8 +35,7 @@ public partial class MainWindow : Window
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
         DataContext = this;
 
-        //DBAdding().GetAwaiter();
-        //DBClear().GetAwaiter();
+
         Draw();
 
     }
@@ -48,12 +47,28 @@ public partial class MainWindow : Window
 
     private async Task DBAdding()
     {
-        await SyntheticData.CreateAll();
+        try
+        {
+            await SyntheticData.CreateAll();
+            MessageBox.Show("Данные успешно добавлены");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Ошибка при добавлении данных: " + ex.Message);
+        }
     }
 
     private async Task DBClear()
     {
-        await SyntheticData.DeleteAll();
+        try
+        {
+            await SyntheticData.DeleteAll();
+            MessageBox.Show("Данные успешно обновлены");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Ошибка при удалении данных: " + ex.Message);
+        }
     }
 
     private void Draw()
@@ -72,5 +87,15 @@ public partial class MainWindow : Window
 
         layerDrawer.DrawLayer(layer);
         layerDrawer.DrawLayer(layer2);
+    }
+
+    private async void Create_SyntheticData_Click(object sender, RoutedEventArgs e)
+    {
+        await DBAdding();
+    }
+
+    private async void Delete_SyntheticData_Click(object sender, RoutedEventArgs e)
+    {
+        await DBClear();
     }
 }
