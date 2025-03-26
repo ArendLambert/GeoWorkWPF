@@ -13,6 +13,8 @@ using Core.Models;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Interfaces;
 using DataAccessLayer.Repositories;
+using Geo_worker.Controllers;
+using Geo_worker.Models;
 
 namespace Geo_worker;
 
@@ -35,6 +37,8 @@ public partial class MainWindow : Window
 
         //DBAdding().GetAwaiter();
         //DBClear().GetAwaiter();
+        Draw();
+
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -50,5 +54,22 @@ public partial class MainWindow : Window
     private async Task DBClear()
     {
         await SyntheticData.DeleteAll();
+    }
+
+    private void Draw()
+    {
+        LayerBuilder builder = new LayerBuilder();
+        LayerDrawer layerDrawer = new LayerDrawer(DrawingCanvas);
+
+        builder.BuildRectangle(new PointDraw(90, 90), 300, 300, 1, Brushes.Gray, Brushes.Black);
+        Layer layer = builder.GetResult();
+
+        builder.CreateLayer();
+        builder.BuildEllipse(new PointDraw(100, 100), 100, 100, 10, Brushes.Green, Brushes.Black);
+        builder.BuildText("Hello", new PointDraw(200, 200), Brushes.Black, 12);
+        Layer layer2 = builder.GetResult();
+
+        layerDrawer.DrawLayer(layer);
+        layerDrawer.DrawLayer(layer2);
     }
 }

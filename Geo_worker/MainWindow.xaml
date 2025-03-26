@@ -285,7 +285,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
 
         <!-- Центральный блок -->
         <Grid Grid.Column="1" Grid.Row="1" Background="#FF5F5F5F" Margin="0,0,50,40" Grid.RowSpan="2">
-            <Canvas Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red"/>
+            <Canvas x:Name="DrawingCanvas" Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red"/>
 
         </Grid>
 
