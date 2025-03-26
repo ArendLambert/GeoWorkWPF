@@ -1,0 +1,9 @@
+CREATE TABLE AuditLog (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ChangeDateTime DATETIME NOT NULL,
+    OldValue NVARCHAR(255) NOT NULL,
+    NewValue NVARCHAR(255) NOT NULL,
+    ChangeLocation NVARCHAR(255) NOT NULL,
+    Username NVARCHAR(50) NOT NULL,
+    [Action] NVARCHAR(50) NOT NULL
+);

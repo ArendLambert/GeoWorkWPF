@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class CustomerEntity
+public partial class CustomerEntity : BaseEntity
 {
     public int IdCustomer { get; set; }
 

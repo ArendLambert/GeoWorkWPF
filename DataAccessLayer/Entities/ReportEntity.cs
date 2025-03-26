@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class ReportEntity
+public partial class ReportEntity : BaseEntity
 {
     public int IdReport { get; set; }
 

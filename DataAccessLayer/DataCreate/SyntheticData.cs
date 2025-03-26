@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Core.Models;
+using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
 
 namespace Core.DataCreate
 {
     public class SyntheticData
     {
+
+        public static UnitOfWork UnitOfWork { get; private set; } = new UnitOfWork(new GravitySurveyOnDeleteNoAction(), 0);
         public static async Task CreateAll()
         {
             await CreateAccessLevels();
@@ -46,6 +49,7 @@ namespace Core.DataCreate
             await DeleteCustomerTypes();
             await DeleteEquipments();
             await DeleteAccessLevels();
+            await DeleteAuditLogs();
         }
 
         public async static Task CreateAccessLevels()
@@ -95,12 +99,17 @@ namespace Core.DataCreate
             List<Equipment> equipments = await UnitOfWork.EquipmentRepository.GetAll();
             int? idEmployee = employees.FirstOrDefault()?.Id;
             int? idPicket = pickets.FirstOrDefault()?.Id;
+            int? idSecondPicket = pickets.ElementAtOrDefault(1)?.Id;
             int? idEquipment = equipments.FirstOrDefault()?.Id;
-            if(idEmployee == null || idPicket == null || idEquipment == null)
+            if (idEmployee == null || idPicket == null || idEquipment == null || idSecondPicket == null)
             {
                 return;
             }
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.2, 9.7, 0, 100, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.3, 9.7, 0, 100.3, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.0, 2.4, 9.75, 0.05, 95.7, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.5, 9.7, 0, 102.3, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.0, 2.6, 9.72, 0.02, 98.1, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.7, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
         }
 
         public async static Task DeletePoints()
@@ -341,6 +350,15 @@ namespace Core.DataCreate
             foreach (Report report in reports)
             {
                 await UnitOfWork.ReportRepository.Delete(report.Id);
+            }
+        }
+
+        public async static Task DeleteAuditLogs()
+        {
+            List<AuditLogs> auditLogs = await UnitOfWork.AuditLogRepository.GetAll();
+            foreach (AuditLogs auditLog in auditLogs)
+            {
+                await UnitOfWork.AuditLogRepository.Delete(auditLog.Id);
             }
         }
     }

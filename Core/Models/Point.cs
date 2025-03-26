@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Abstractions;
 
 namespace Core.Models
 {
-    public class Point
+    public class Point : BaseModel
     {
         public int Id { get; private set; }
 

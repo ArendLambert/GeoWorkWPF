@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class ProfileCoordinateRepository : BaseRepository<ProfileCoordinate>, IRepository<ProfileCoordinate>
     {
-        public ProfileCoordinateRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public ProfileCoordinateRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(ProfileCoordinate entity)
         {
@@ -30,8 +28,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.ProfileCoordinates.AddAsync(profileCoordinate);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "ProfileCoordinate", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -53,6 +51,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.ProfileCoordinates.Remove(profileCoordinate);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(profileCoordinate.ToString(), "null", "ProfileCoordinate", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {ProfileCoordinate repository delete}");
@@ -95,6 +94,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.ProfileCoordinates.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "ProfileCoordinate", _userId.ToString(), "Update");
                 existingEntity.IdProfile = entity.IdProfile;
                 existingEntity.X = entity.X;
                 existingEntity.Y = entity.Y;

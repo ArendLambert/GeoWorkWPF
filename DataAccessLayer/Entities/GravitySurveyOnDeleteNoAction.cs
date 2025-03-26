@@ -45,6 +45,8 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
 
     public virtual DbSet<SquareEntity> Squares { get; set; }
 
+    public virtual DbSet<AuditLogsEntity> AuditLogs { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=GravitySurveyOnDeleteNoAction;Trusted_Connection=True;TrustServerCertificate=True;");
 
@@ -289,6 +291,18 @@ public partial class GravitySurveyOnDeleteNoAction : DbContext
                 .HasForeignKey(d => d.IdProject)
                 .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK__Square__ID_Proje__49C3F6B7");
+        });
+
+        modelBuilder.Entity<AuditLogsEntity>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__AuditLog__3214EC07A8B1D8F2");
+            entity.ToTable("AuditLogs");
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.ChangeDateTime).HasColumnName("ChangeDateTime").HasColumnType("datetime");
+            entity.Property(e => e.OldValue).HasColumnName("OldValue").HasMaxLength(1000);
+            entity.Property(e => e.NewValue).HasColumnName("NewValue").HasMaxLength(1000);
+            entity.Property(e => e.ChangeLocation).HasColumnName("ChangeLocation").HasMaxLength(255);
+            entity.Property(e => e.Username).HasColumnName("Username").HasMaxLength(50);
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -9,14 +9,13 @@ using DataAccessLayer.Abstractions;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataAccessLayer.Repositories
 {
     public class ProjectRepository : BaseRepository<Project>, IRepository<Project>
     {
-        public ProjectRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public ProjectRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Project entity)
         {
@@ -30,8 +29,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Projects.AddAsync(project);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Project", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -53,6 +52,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Projects.Remove(project);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(project.ToString(), "null", "Project", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Project repository delete}");
@@ -95,6 +95,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Projects.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Project", _userId.ToString(), "Update");
                 existingEntity.IdEmployee = entity.IdEmployee;
                 existingEntity.Name = entity.Name;
                 existingEntity.IdCustomer = entity.IdCustomer;

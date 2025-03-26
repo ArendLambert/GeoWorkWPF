@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class PicketCoordinateRepository : BaseRepository<PicketCoordinate>, IRepository<PicketCoordinate>
     {
-        public PicketCoordinateRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public PicketCoordinateRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(PicketCoordinate entity)
         {
@@ -30,8 +28,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.PicketCoordinates.AddAsync(picketCoordinateEntity);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "PicketCoordinate", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -53,6 +51,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.PicketCoordinates.Remove(picketCoordinate);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(picketCoordinate.ToString(), "null", "PicketCoordinate", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {PicketCoordinate repository delete}");
@@ -95,6 +94,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.PicketCoordinates.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "PicketCoordinate", _userId.ToString(), "Update");
                 existingEntity.IdPicket = entity.IdPicket;
                 existingEntity.X = entity.X;
                 existingEntity.Y = entity.Y;

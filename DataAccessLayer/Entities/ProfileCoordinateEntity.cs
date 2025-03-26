@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class ProfileCoordinateEntity
+public partial class ProfileCoordinateEntity : BaseEntity
 {
     public int IdRecord { get; set; }
 

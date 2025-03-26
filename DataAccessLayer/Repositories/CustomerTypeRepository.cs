@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class CustomerTypeRepository : BaseRepository<CustomerType>, IRepository<CustomerType>
     {
-        public CustomerTypeRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public CustomerTypeRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(CustomerType entity)
         {
@@ -27,6 +25,7 @@ namespace DataAccessLayer.Repositories
                     Description = entity.Description
                 });
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "CustomerType", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -48,6 +47,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.CustomerTypes.Remove(customerType);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(customerType.ToString(), "null", "CustomerType", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {CustomerType repository delete}");
@@ -91,6 +91,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.CustomerTypes.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "CustomerType", _userId.ToString(), "Update");
                 existingEntity.Description = entity.Description;
                 await _context.SaveChangesAsync();
             }

@@ -14,7 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class AccessLevelRepository : BaseRepository<AccessLevel>, IRepository<AccessLevel>
     {
-        public AccessLevelRepository(GravitySurveyOnDeleteNoAction context) : base(context){}
+        public AccessLevelRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork){}
 
         public async Task<List<AccessLevel>> GetAll()
         {
@@ -47,6 +47,7 @@ namespace DataAccessLayer.Repositories
                     Description = entity.Description
                 });
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "AccessLevel", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -64,9 +65,11 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.AccessLevels.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "AccessLevel", _userId.ToString(), "Update");
                 existingEntity.Name = entity.Name;
                 existingEntity.Description = entity.Description;
                 await _context.SaveChangesAsync();
+
             }
         }
 
@@ -80,6 +83,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.AccessLevels.Remove(level);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(level.ToString(), "null", "AccessLevel", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {AccessLevel repository delete}");

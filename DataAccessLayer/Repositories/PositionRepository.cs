@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +15,7 @@ namespace DataAccessLayer.Repositories
 {
     public class PositionRepository : BaseRepository<Position>, IRepository<Position>
     {
-        public PositionRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public PositionRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Position entity)
         {
@@ -30,8 +29,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Positions.AddAsync(position);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Position", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -53,6 +52,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Positions.Remove(position);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(position.ToString(), "null", "Position", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Position repository delete}");
@@ -95,6 +95,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Positions.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Position", _userId.ToString(), "Update");
                 existingEntity.Name = entity.Name;
                 existingEntity.Salary = entity.Salary;
                 existingEntity.IdAccessLevel = entity.IdAccessLevel;

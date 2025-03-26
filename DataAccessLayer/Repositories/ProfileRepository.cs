@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     class ProfileRepository : BaseRepository<Profile>, IRepository<Profile>
     {
-        public ProfileRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public ProfileRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Profile entity)
         {
@@ -29,8 +27,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Profiles.AddAsync(profile);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Profile", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -52,6 +50,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Profiles.Remove(profile);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(profile.ToString(), "null", "Profile", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Profile repository delete}");
@@ -94,6 +93,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Profiles.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Profile", _userId.ToString(), "Update");
                 existingEntity.Name = entity.Name;
                 existingEntity.IdSquare = entity.IdSquare;
                 await _context.SaveChangesAsync();

@@ -10,14 +10,13 @@ using DataAccessLayer.Interfaces;
 using Core.Models;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Sockets;
 
 namespace DataAccessLayer.Repositories
 {
     public class PointRepository : BaseRepository<Core.Models.Point>, IRepository<Core.Models.Point>
     {
-        public PointRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public PointRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Core.Models.Point entity)
         {
@@ -38,8 +37,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Points.AddAsync(point);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Point", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -61,6 +60,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Points.Remove(point);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(point.ToString(), "null", "Point", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Point repository delete}");
@@ -104,6 +104,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Points.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Point", _userId.ToString(), "Update");
                 existingEntity.X = entity.X;
                 existingEntity.Y = entity.Y;
                 existingEntity.Gravity = entity.Gravity;

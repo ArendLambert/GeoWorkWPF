@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     class ReportRepository : BaseRepository<Report>, IRepository<Report>
     {
-        public ReportRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public ReportRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Report entity)
         {
@@ -30,8 +28,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Reports.AddAsync(report);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Report", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -53,6 +51,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Reports.Remove(report);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(report.ToString(), "null", "Report", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Report repository delete}");
@@ -95,6 +94,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Reports.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Report", _userId.ToString(), "Update");
                 existingEntity.IdEmployee = entity.IdEmployee;
                 existingEntity.IdProject = entity.IdProject;
                 existingEntity.ReportFile = entity.ReportFile;

@@ -14,7 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class AreaCoordinateRepository : BaseRepository<AreaCoordinate>, IRepository<AreaCoordinate>
     {
-        public AreaCoordinateRepository(GravitySurveyOnDeleteNoAction context) : base(context){}
+        public AreaCoordinateRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(AreaCoordinate entity)
         {
@@ -27,6 +27,7 @@ namespace DataAccessLayer.Repositories
                     Y = entity.Y,
                 });
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "AreaCoordinate", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -48,6 +49,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.AreaCoordinates.Remove(areaCoordinates);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(areaCoordinates.ToString(), "null", "AreaCoordinates", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {AreaCoordinates repository delete}");
@@ -89,6 +91,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.AreaCoordinates.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "AreaCoordinate", _userId.ToString(), "Update");
                 existingEntity.IdSquare = entity.IdSquare;
                 existingEntity.X = entity.X;
                 existingEntity.Y = entity.Y;

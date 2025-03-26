@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class ProjectEntity
+public partial class ProjectEntity : BaseEntity
 {
     public int IdProject { get; set; }
 

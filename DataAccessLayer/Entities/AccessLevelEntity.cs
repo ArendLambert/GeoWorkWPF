@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Core.Abstractions;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class AccessLevelEntity
+public partial class AccessLevelEntity : BaseEntity
 {
     public int IdAccessLevel { get; set; }
 

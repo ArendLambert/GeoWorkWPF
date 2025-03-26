@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class EquipmentRepository : BaseRepository<Equipment>, IRepository<Equipment>
     {
-        public EquipmentRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public EquipmentRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Equipment entity)
         {
@@ -29,8 +27,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Equipment.AddAsync(equipmentEntity);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Equipment", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -52,6 +50,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Equipment.Remove(equipment);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(equipment.ToString(), "null", "Equipment", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Employee repository delete}");
@@ -94,6 +93,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Equipment.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Equipment", _userId.ToString(), "Update");
                 existingEntity.SerialNumber = entity.SerialNumber;
                 existingEntity.Name = entity.Name;
                 await _context.SaveChangesAsync();

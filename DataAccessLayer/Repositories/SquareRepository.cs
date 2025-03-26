@@ -14,9 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     public class SquareRepository : BaseRepository<Square>, IRepository<Square>
     {
-        public SquareRepository(GravitySurveyOnDeleteNoAction context) : base(context)
-        {
-        }
+        public SquareRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Square entity)
         {
@@ -30,8 +28,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Squares.AddAsync(project);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Report", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -53,6 +51,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Squares.Remove(square);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(square.ToString(), "null", "Square", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Square repository delete}");
@@ -95,6 +94,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Squares.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Square", _userId.ToString(), "Update");
                 existingEntity.Alitude = entity.Alitude;
                 existingEntity.Name = entity.Name;
                 existingEntity.IdProject = entity.IdProject;

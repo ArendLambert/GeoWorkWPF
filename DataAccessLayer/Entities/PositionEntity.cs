@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class PositionEntity
+public partial class PositionEntity : BaseEntity
 {
     public int IdPosition { get; set; }
 

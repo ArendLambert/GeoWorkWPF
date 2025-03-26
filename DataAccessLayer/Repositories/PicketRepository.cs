@@ -14,7 +14,7 @@ namespace DataAccessLayer.Repositories
 {
     class PicketRepository : BaseRepository<Picket>, IRepository<Picket>
     {
-        public PicketRepository(GravitySurveyOnDeleteNoAction context) : base(context){}
+        public PicketRepository(GravitySurveyOnDeleteNoAction context, int userId, UnitOfWork unitOfWork) : base(context, userId, unitOfWork) { }
 
         public async Task Create(Picket entity)
         {
@@ -27,8 +27,8 @@ namespace DataAccessLayer.Repositories
                 };
 
                 await _context.Pickets.AddAsync(picket);
-
                 await _context.SaveChangesAsync();
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Picket", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {
@@ -50,6 +50,7 @@ namespace DataAccessLayer.Repositories
                 {
                     _context.Pickets.Remove(picket);
                     await _context.SaveChangesAsync();
+                    await _unitOfWork.AuditLogsService.AddLog(picket.ToString(), "null", "Picket", _userId.ToString(), "Delete");
                     return;
                 }
                 Debug.WriteLine("Entity not found {Picket repository delete}");
@@ -92,6 +93,7 @@ namespace DataAccessLayer.Repositories
             var existingEntity = await _context.Pickets.FindAsync(entity.Id);
             if (existingEntity != null)
             {
+                await _unitOfWork.AuditLogsService.AddLog(existingEntity.ToString(), entity.ToString(), "Picket", _userId.ToString(), "Update");
                 existingEntity.IdProfile = entity.IdProfile;
                 existingEntity.Name = entity.Name;
                 await _context.SaveChangesAsync();

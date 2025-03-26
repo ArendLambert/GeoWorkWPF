@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccessLayer.Abstractions;
 
 namespace DataAccessLayer.Entities;
 
-public partial class ProfileEntity
+public partial class ProfileEntity : BaseEntity
 {
     public int IdProfile { get; set; }
 
