@@ -34,7 +34,7 @@ namespace Geo_worker.Controllers
             Layer.AddPart(point);
         }
 
-        public override void BuildLine(PointDraw pointBegin, PointDraw pointEnd, int thickness, Brush? colorFill, Brush? colorOutline)
+        public override void BuildLine(PointDraw pointBegin, PointDraw pointEnd, int thickness, Brush? colorOutline)
         {
             Line line = new Line
             {
@@ -43,7 +43,7 @@ namespace Geo_worker.Controllers
                 X2 = pointEnd.X, // Конечная точка X
                 Y2 = pointEnd.Y, // Конечная точка Y
                 Stroke = colorOutline,
-                Fill = colorFill,
+                Fill = null,
                 StrokeThickness = thickness
             };
             Layer.AddPart(line);
@@ -76,11 +76,11 @@ namespace Geo_worker.Controllers
             Layer.AddPart(rectangle);
         }
 
-        public override void BuildZigZag(List<PointDraw> points, int thickness, Brush? colorFill, Brush? colorOutline)
+        public override void BuildZigZag(List<PointDraw> points, int thickness, Brush? colorOutline)
         {
             for (int i = 0; i < points.Count - 1; i++)
             {
-                BuildLine(points[i], points[i + 1], thickness, colorFill, colorOutline);
+                BuildLine(points[i], points[i + 1], thickness, colorOutline);
             }
         }
 

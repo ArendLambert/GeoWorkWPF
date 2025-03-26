@@ -67,6 +67,7 @@ public partial class MainWindow : Window
         builder.CreateLayer();
         builder.BuildEllipse(new PointDraw(100, 100), 100, 100, 10, Brushes.Green, Brushes.Black);
         builder.BuildText("Hello", new PointDraw(200, 200), Brushes.Black, 12);
+        builder.BuildZigZag(new List<PointDraw> { new PointDraw(100, 100), new PointDraw(200, 200), new PointDraw(300, 100), new PointDraw(400, 300) }, 4, Brushes.Black);
         Layer layer2 = builder.GetResult();
 
         layerDrawer.DrawLayer(layer);
