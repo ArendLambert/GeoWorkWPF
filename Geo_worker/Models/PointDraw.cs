@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Models;
 
 namespace Geo_worker.Models
 {
@@ -10,13 +11,13 @@ namespace Geo_worker.Models
     {
         public double X { get; private set; }
         public double Y { get; private set; }
-        public PointDraw(int x, int y)
+        public PointDraw(double x, double y)
         {
             X = x;
             Y = y;
         }
 
-        public PointDraw Create(int x, int y)
+        public PointDraw Create(double x, double y)
         {
             return new PointDraw(x, y);
         }
@@ -29,6 +30,11 @@ namespace Geo_worker.Models
         public void ChangeY(int y)
         {
             Y = y;
+        }
+
+        public static PointDraw CreatePointDrawFromGeoPoint(Point point)
+        {
+            return new PointDraw(point.X, point.Y);
         }
     }
 }

@@ -34,6 +34,7 @@ namespace Core.DataCreate
 
         public static async Task DeleteAll()
         {
+            await DeleteAuditLogs();
             await DeleteReport();
             await DeleteProfileCoordinate();
             await DeletePicketCoordinate();
@@ -48,8 +49,7 @@ namespace Core.DataCreate
             await DeletePositions();
             await DeleteCustomerTypes();
             await DeleteEquipments();
-            await DeleteAccessLevels();
-            await DeleteAuditLogs();
+            await DeleteAccessLevels();         
         }
 
         public async static Task CreateAccessLevels()
@@ -101,7 +101,7 @@ namespace Core.DataCreate
             int? idPicket = pickets.FirstOrDefault()?.Id;
             int? idSecondPicket = pickets.ElementAtOrDefault(1)?.Id;
             int? idEquipment = equipments.FirstOrDefault()?.Id;
-            if (idEmployee == null || idPicket == null || idEquipment == null || idSecondPicket == null)
+            if (idEmployee == null || idPicket == null || idEquipment == null)
             {
                 return;
             }

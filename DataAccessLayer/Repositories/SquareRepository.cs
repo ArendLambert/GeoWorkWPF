@@ -29,7 +29,7 @@ namespace DataAccessLayer.Repositories
 
                 await _context.Squares.AddAsync(project);
                 await _context.SaveChangesAsync();
-                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Report", _userId.ToString(), "Create");
+                await _unitOfWork.AuditLogsService.AddLog("null", entity.ToString(), "Square", _userId.ToString(), "Create");
             }
             catch (Exception ex)
             {

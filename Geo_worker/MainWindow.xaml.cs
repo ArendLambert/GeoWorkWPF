@@ -37,7 +37,7 @@ public partial class MainWindow : Window
 
         //DBAdding().GetAwaiter();
         //DBClear().GetAwaiter();
-        Draw();
+        //Draw();
 
     }
 
