@@ -27,7 +27,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<AccessLevel?> GetById(int id)
+        public async Task<AccessLevel?> GetById(int? id)
         {
             AccessLevelEntity? level = await _context.AccessLevels.FindAsync(id);
             if (level != null)

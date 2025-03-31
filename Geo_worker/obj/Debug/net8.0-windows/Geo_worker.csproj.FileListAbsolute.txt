@@ -491,3 +491,7 @@ C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.genruntimeconfig.cache
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ref\Geo_worker.dll
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.sourcelink.json
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\AuthWindow.g.cs
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ImportProjectWindow.g.cs
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\AuthWindow.baml
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ImportProjectWindow.baml

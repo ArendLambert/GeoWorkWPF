@@ -9,15 +9,15 @@ namespace Core.Models
 {
     public class Project : BaseModel
     {
-        public int Id { get; private set; }
+        public int Id { get; protected set; }
 
-        public string Name { get; private set; }
+        public string Name { get; protected set; }
 
-        public int? IdCustomer { get; private set; }
+        public int? IdCustomer { get; protected set; }
 
-        public int? IdEmployee { get; private set; }
+        public int? IdEmployee { get; protected set; }
 
-        private Project(int id, string name, int? idCustomer, int? idEmployee)
+        protected Project(int id, string name, int? idCustomer, int? idEmployee)
         {
             Id = id;
             Name = name;

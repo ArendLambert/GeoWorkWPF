@@ -78,7 +78,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Square?> GetById(int id)
+        public async Task<Square?> GetById(int? id)
         {
             SquareEntity? square = await _context.Squares.FindAsync(id);
 

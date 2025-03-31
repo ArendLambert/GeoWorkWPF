@@ -76,7 +76,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<AreaCoordinate?> GetById(int id)
+        public async Task<AreaCoordinate?> GetById(int? id)
         {
             AreaCoordinateEntity? areaCoordinates = await _context.AreaCoordinates.FindAsync(id);
             if (areaCoordinates != null)

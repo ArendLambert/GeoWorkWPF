@@ -78,7 +78,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Report?> GetById(int id)
+        public async Task<Report?> GetById(int? id)
         {
             ReportEntity? report = await _context.Reports.FindAsync(id);
 

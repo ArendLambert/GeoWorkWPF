@@ -78,7 +78,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<PicketCoordinate?> GetById(int id)
+        public async Task<PicketCoordinate?> GetById(int? id)
         {
             PicketCoordinateEntity? picketCoordinate = await _context.PicketCoordinates.FindAsync(id);
 

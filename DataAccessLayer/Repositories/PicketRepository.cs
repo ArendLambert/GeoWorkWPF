@@ -77,7 +77,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Picket?> GetById(int id)
+        public async Task<Picket?> GetById(int? id)
         {
             PicketEntity? picket = await _context.Pickets.FindAsync(id);
 

@@ -74,7 +74,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<CustomerType?> GetById(int id)
+        public async Task<CustomerType?> GetById(int? id)
         {
             CustomerTypeEntity? customerType = await _context.CustomerTypes.FindAsync(id);
             if (customerType != null)

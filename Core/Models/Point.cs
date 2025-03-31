@@ -9,27 +9,27 @@ namespace Core.Models
 {
     public class Point : BaseModel
     {
-        public int Id { get; private set; }
+        public int Id { get; protected set; }
 
-        public double X { get; private set; }
+        public double X { get; protected set; }
 
-        public double Y { get; private set; }
+        public double Y { get; protected set; }
 
-        public double Gravity { get; private set; }
+        public double Gravity { get; protected set; }
 
-        public double GravityAnomaly { get; private set; }
+        public double GravityAnomaly { get; protected set; }
 
-        public double Amendments { get; private set; }
+        public double Amendments { get; protected set; }
 
-        public DateTime Datetime { get; private set; }
+        public DateTime Datetime { get; protected set; }
 
-        public int? IdOperator { get; private set; }
+        public int? IdOperator { get; protected set; }
 
-        public int? IdEquipment { get; private set; }
+        public int? IdEquipment { get; protected set; }
 
-        public int? IdPicket { get; private set; }
+        public int? IdPicket { get; protected set; }
 
-        private Point(int idPoint, double x, double y, double gravity, double gravityAnomaly, double amendments, DateTime datetime, int? idOperator, int? idEquipment, int? idPicket)
+        protected Point(int idPoint, double x, double y, double gravity, double gravityAnomaly, double amendments, DateTime datetime, int? idOperator, int? idEquipment, int? idPicket)
         {
             Id = idPoint; X = x; Y = y; Gravity = gravity; GravityAnomaly = gravityAnomaly; Amendments = amendments; Datetime = datetime; IdOperator = idOperator; IdEquipment = idEquipment; IdPicket = idPicket;
         }

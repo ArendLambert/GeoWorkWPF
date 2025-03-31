@@ -77,7 +77,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Profile?> GetById(int id)
+        public async Task<Profile?> GetById(int? id)
         {
             ProfileEntity? profile = await _context.Profiles.FindAsync(id);
 

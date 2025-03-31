@@ -87,7 +87,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Core.Models.Point?> GetById(int id)
+        public async Task<Core.Models.Point?> GetById(int? id)
         {
             PointEntity? picket = await _context.Points.FindAsync(id);
 

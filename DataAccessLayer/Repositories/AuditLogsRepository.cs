@@ -77,7 +77,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<AuditLogs?> GetById(int id)
+        public async Task<AuditLogs?> GetById(int? id)
         {
             AuditLogsEntity? auditLogs = await _context.AuditLogs.FindAsync(id);
             if (auditLogs != null)

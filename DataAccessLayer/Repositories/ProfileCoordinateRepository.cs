@@ -78,7 +78,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<ProfileCoordinate?> GetById(int id)
+        public async Task<ProfileCoordinate?> GetById(int? id)
         {
             ProfileCoordinateEntity? profileCoordinate = await _context.ProfileCoordinates.FindAsync(id);
 

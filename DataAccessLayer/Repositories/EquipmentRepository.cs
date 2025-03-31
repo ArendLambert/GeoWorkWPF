@@ -77,7 +77,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Equipment?> GetById(int id)
+        public async Task<Equipment?> GetById(int? id)
         {
             EquipmentEntity? equipment = await _context.Equipment.FindAsync(id);
 

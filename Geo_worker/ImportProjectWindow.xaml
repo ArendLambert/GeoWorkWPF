@@ -1,0 +1,64 @@
+﻿<Window x:Class="Geo_worker.ImportProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Geo_worker"
+        mc:Ignorable="d"
+        Title="Выбор проекта для импорта" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" WindowStyle="None">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Таблица с проектами -->
+        <DataGrid x:Name="ProjectsDataGrid"
+                  Grid.Row="0" 
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  Margin="0,0,0,20"
+                  ItemsSource="{Binding Projects}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID проекта" 
+                                  Binding="{Binding Id}" 
+                                  Width="80"/>
+                <DataGridTextColumn Header="Название проекта" 
+                                  Binding="{Binding Name}" 
+                                  Width="*"/>
+                <DataGridTextColumn Header="Заказчик" 
+                                  Binding="{Binding CustomerName}" 
+                                  Width="200"/>
+                <DataGridTextColumn Header="Руководитель" 
+                                  Binding="{Binding EmployeeLogin}" 
+                                  Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Кнопки управления -->
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right">
+            <Button Content="Выбрать" 
+                    Width="100" 
+                    Height="30" 
+                    Margin="0,0,10,0"
+                    Background="#FF4CAF50"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Click="SelectButton_Click"/>
+            <Button Content="Отмена" 
+                    Width="100" 
+                    Height="30"
+                    Background="#FFF44336"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

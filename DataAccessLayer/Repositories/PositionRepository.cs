@@ -79,7 +79,7 @@ namespace DataAccessLayer.Repositories
                 .ToList();
         }
 
-        public async Task<Position?> GetById(int id)
+        public async Task<Position?> GetById(int? id)
         {
             PositionEntity? position = await _context.Positions.FindAsync(id);
 
