@@ -47,6 +47,12 @@ namespace Geo_worker.Controllers
             }
         }
 
+        public void ReDrawLayer(Layer layer)
+        {
+            HideLayer(layer);
+            DrawLayer(layer);
+        }
+
         public void ClearCanvas()
         {
             _canvas.Children.Clear();

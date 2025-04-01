@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,10 +78,17 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 0, 10));
-            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 0, 0));
-            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 10, 0));
-            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 10, 10));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 100, 100));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 300, 100));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 300, 200));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 200, 300));
+            //await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare, 100, 100));
+
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare + 1, 300, 100));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare + 1, 300, 200));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare + 1, 200, 300));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare+1, 400, 300));
+            await UnitOfWork.AreaCoordinateRepository.Create(AreaCoordinate.Create(0, idSquare+1, 400, 100));
         }
 
         public async static Task DeleteAreaCoordinates()
@@ -105,11 +113,64 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.3, 9.7, 0, 100.3, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.0, 2.4, 9.75, 0.05, 95.7, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.5, 9.7, 0, 102.3, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.0, 2.6, 9.72, 0.02, 98.1, DateTime.Now, idEmployee, idEquipment, idPicket));
-            await UnitOfWork.PointRepository.Create(Point.Create(0, 1.1, 2.7, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 178.0, 112.0, 9.7, 0, 100.3, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 180.0, 124.0, 9.75, 0.05, 95.7, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 188.0, 121.0, 9.7, 0, 102.3, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 191.0, 133.0, 9.72, 0.02, 98.1, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 199.0, 132.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 213.0, 138.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 212.0, 130.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 221.0, 131.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 223.0, 120.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 233.0, 126.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 243.0, 131.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 242.0, 140.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket));
+
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 150.0, 154.0, 9.7, 0, 100.3, DateTime.Now, idEmployee, idEquipment, idPicket+1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 154.0, 159.0, 9.75, 0.05, 95.7, DateTime.Now, idEmployee, idEquipment, idPicket+1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 152.0, 166.0, 9.7, 0, 102.3, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 155.0, 169.0, 9.72, 0.02, 98.1, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 158.0, 174.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 164.0, 177.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 168.0, 174.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 175.0, 176.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 178.0, 182.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 175.0, 185.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 176.0, 193.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 172.0, 198.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 180.0, 206.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 188.0, 200.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 200.0, 204.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 208.0, 213.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 200.0, 224.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 1));
+
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 277.0, 270.0, 9.7, 0, 100.3, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 282, 271.0, 9.75, 0.05, 95.7, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 283, 276.0, 9.7, 0, 102.3, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 287.0, 277.0, 9.72, 0.02, 98.1, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 293.0, 281.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 294.0, 276.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 299.0, 276.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 298.0, 271.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 303.0, 270.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 308.0, 271.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 309.0, 276.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 314.0, 276.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 317.0, 282.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 322.0, 280.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 326.0, 277.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 325.0, 274.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 327.0, 269.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 332.0, 270.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 336.0, 267.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 338.0, 275.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 343.0, 275.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 346.0, 282.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 351.0, 280.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 356.0, 279.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 356.0, 273.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 361.0, 271.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
+            await UnitOfWork.PointRepository.Create(Point.Create(0, 360.0, 268.0, 9.65, -0.05, 102.4, DateTime.Now, idEmployee, idEquipment, idPicket + 2));
         }
 
         public async static Task DeletePoints()
@@ -226,6 +287,8 @@ namespace Core.DataCreate
                 return;
             }
             await UnitOfWork.PicketRepository.Create(Picket.Create(0, "Picket 1", idProfile));
+            await UnitOfWork.PicketRepository.Create(Picket.Create(0, "Picket 2", idProfile+1));
+            await UnitOfWork.PicketRepository.Create(Picket.Create(0, "Picket 3", idProfile+2));
         }
 
         public async static Task DeletePickets()
@@ -246,6 +309,8 @@ namespace Core.DataCreate
                 return;
             }
             await UnitOfWork.ProfileRepository.Create(Profile.Create(0, "Profile 1", idSquare));
+            await UnitOfWork.ProfileRepository.Create(Profile.Create(0, "Profile 2", idSquare));
+            await UnitOfWork.ProfileRepository.Create(Profile.Create(0, "Profile 3", idSquare+1));
         }
 
         public async static Task DeleteProfiles()
@@ -266,6 +331,7 @@ namespace Core.DataCreate
                 return;
             }
             await UnitOfWork.SquareRepository.Create(Square.Create(0, "Square 1", 100, idProject));
+            await UnitOfWork.SquareRepository.Create(Square.Create(0, "Square 2", 120, idProject));
         }
 
         public async static Task DeleteSquares()
@@ -299,7 +365,25 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, 2.0, 3.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, 170.0, 110.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, 205.0, 140.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, 230.0, 115.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket, 250.0, 150.0));
+
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket+1, 150.0, 150.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket+1, 155.0, 175.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket+1, 180.0, 175.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket+1, 175.0, 205.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket+1, 205.0, 200.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket+1, 200.0, 235.0));
+
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 275.0, 265.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 290.0, 280.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 300.0, 265.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 320.0, 285.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 330.0, 265.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 350.0, 285.0));
+            await UnitOfWork.PicketCoordinateRepository.Create(PicketCoordinate.Create(0, idPicket + 2, 360.0, 265.0));
         }
 
         public async static Task DeletePicketCoordinate()
@@ -319,7 +403,19 @@ namespace Core.DataCreate
             {
                 return;
             }
-            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile, 2.0, 3.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile, 100.0, 100.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile, 300.0, 100.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile, 300.0, 200.0));
+
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile+1, 100.0, 100.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile+1, 200.0, 300.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile+1, 300.0, 200.0));
+
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile + 2, 200.0, 300.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile + 2, 400.0, 300.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile + 2, 400.0, 100.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile + 2, 300.0, 100.0));
+            await UnitOfWork.ProfileCoordinateRepository.Create(ProfileCoordinate.Create(0, idProfile + 2, 300.0, 200.0));
         }
 
         public async static Task DeleteProfileCoordinate()
@@ -355,10 +451,25 @@ namespace Core.DataCreate
 
         public async static Task DeleteAuditLogs()
         {
-            List<AuditLogs> auditLogs = await UnitOfWork.AuditLogRepository.GetAll();
-            foreach (AuditLogs auditLog in auditLogs)
+            Debug.WriteLine("!!!!!!!!!!!!!!!!!Удаление AuditLogs!!!!!!!!!!!!!!!!!!");
+            try
             {
-                await UnitOfWork.AuditLogRepository.Delete(auditLog.Id);
+                List<AuditLogs> auditLogs = await UnitOfWork.AuditLogRepository.GetAll();
+                foreach (AuditLogs auditLog in auditLogs)
+                {
+                    try
+                    {
+                        await UnitOfWork.AuditLogRepository.Delete(auditLog.Id);
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine($"Ошибка при удалении AuditLog с ID {auditLog.Id}: {ex.Message}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Ошибка при получении AuditLogs: {ex.Message}");
             }
         }
     }

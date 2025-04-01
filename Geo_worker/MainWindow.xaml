@@ -67,7 +67,7 @@
                 <Grid>
                     <!-- TextBox для ввода -->
                     <TextBox Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" 
-             x:Name="SearchTermTextBox" SpellCheck.IsEnabled="True" Language="ru-ru" Height="20">
+             x:Name="SearchTermTextBox"  TextChanged="SearchTermTextBlock_TextChanged" SpellCheck.IsEnabled="True" Language="ru-ru" Height="20">
                         <TextBox.Style>
                             <Style TargetType="TextBox">
                                 <!-- По умолчанию текст пустой -->
@@ -83,11 +83,10 @@
                     </TextBox>
 
                     <!-- Подсказка для TextBox -->
-                    <TextBlock x:Name="SearchTermTextBlock" IsHitTestVisible="False" 
-               Text="Введите поисковый запрос" VerticalAlignment="Center" HorizontalAlignment="Left" 
-               Margin="10,0,0,0" Foreground="DarkGray">
-                        <TextBlock.Style>
-                            <Style TargetType="TextBlock">
+                    <TextBox x:Name="SearchTermTextBlock" IsHitTestVisible="False" 
+               Text="Введите поисковый запрос" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DarkGray" Width="200">
+                        <TextBox.Style>
+                            <Style TargetType="TextBox">
                                 <!-- По умолчанию текст скрыт -->
                                 <Setter Property="Visibility" Value="Collapsed"/>
                                 <Style.Triggers>
@@ -97,14 +96,14 @@
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
+                        </TextBox.Style>
+                    </TextBox>
                 </Grid>
 
 
-
-                <TreeView x:Name="ProjectTreeView" MouseDoubleClick="ProjectTreeView_MouseDoubleClick" MouseUp="ProjectTreeView_MouseDoubleClick" >
-                    <TreeViewItem Header="dsfa">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Height="730" BorderBrush="#FF9A9A9A" Background="#FF868686">
+                <TreeView x:Name="ProjectTreeView"  MouseUp="ProjectTreeView_MouseClick" MouseDoubleClick="ProjectTreeView_MouseDoubleClick" Background="#FFEDEDED" OpacityMask="Red" Foreground="Black" BorderBrush="#FF005BFF" >
+                    <TreeViewItem Header="dsfa" Background="White" OpacityMask="Black">
                         <TreeViewItem Header="dsfa">
                             <TreeViewItem Header="dsfa">
                                 <TreeViewItem Header="dsfa" />
@@ -119,7 +118,7 @@
                         </TreeViewItem>
                     </TreeViewItem>
                 </TreeView>
-
+                </ScrollViewer>
 
 
             </StackPanel>
@@ -144,7 +143,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                                         <Setter Property="Text" Value=""/>
                                         <Style.Triggers>
                                             <!-- Когда текст не пустой, скрыть подсказку -->
-                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox2}" Value="">
                                                 <Setter Property="Visibility" Value="Visible"/>
                                             </DataTrigger>
                                         </Style.Triggers>
@@ -162,7 +161,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                                         <Setter Property="Visibility" Value="Collapsed"/>
                                         <Style.Triggers>
                                             <!-- Если поле ввода пустое, показываем подсказку -->
-                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox2}" Value="">
                                                 <Setter Property="Visibility" Value="Visible"/>
                                             </DataTrigger>
                                         </Style.Triggers>
@@ -174,21 +173,21 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                 </Grid>
 
                 <Border BorderThickness="2" BorderBrush="Black" Width="350">
+                    
                     <StackPanel>
-                        
-                    <Grid Grid.Row="1" Background="LightGray">
-                    <Grid Margin="10">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="40"/>
-                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Row="1" Background="LightGray">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
 
-                        <!-- Название слоя -->
-                        <Label Content="Слой 1" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                                <!-- Название слоя -->
+                                <Label Content="Объект 1" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
 
-                        <!-- Изображение -->
-                        <Image x:Name="mainImage"  Height="70" Width="120" Grid.Column="1" HorizontalAlignment="Center"/>
+                                <!-- Изображение -->
+                                <Image x:Name="mainImage"  Height="70" Width="120" Grid.Column="1" HorizontalAlignment="Center"/>
 
                                 <StackPanel Grid.Column="2" VerticalAlignment="Center">
                                     <Button Width="30" Height="30" Background="{Binding LockBrush}" />
@@ -196,8 +195,8 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                                 </StackPanel>
 
                             </Grid>
-                        
-                </Grid>
+
+                        </Grid>
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="1*"/>
@@ -205,9 +204,9 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Button Content="Грфик" Grid.Column="0" Click="Button_Click"/>
-                            <Button Content="Пикет" Grid.Column="1"/>
-                            <Button Content="Кривая" Grid.Column="2"/>
+                            <Button Content="Редактировать" Grid.Column="0" Click="Button_Click"/>
+                            <Button Content="Удалить" Grid.Column="1"/>
+                            <Button Content="Свойства" Grid.Column="2"/>
                         </Grid>
                     </StackPanel>
                 </Border>
@@ -222,9 +221,9 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
         </Grid>
 
         <!-- Верхний блок -->
-        <Grid Grid.Column="1" Grid.Row="0" Background="LightCoral" Grid.ColumnSpan="2" Height="50">
+        <Grid Grid.Column="1" Grid.Row="0" Background="White" Grid.ColumnSpan="2" Height="50">
             <StackPanel>
-                <TextBox x:Name="SquareNameTextBox" Text="Площадь 1" FontSize="14" Height="18"/>
+                <TextBox x:Name="SquareNameTextBox" Text="Площадь 1" FontSize="14" Height="18" IsEnabled="False"/>
                 <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -253,7 +252,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Button Content="♰" Grid.Column="0" MinWidth="25" MinHeight="25"/>
+                        <Button x:Name="ReDrawButton" Content="⟳" Grid.Column="0" MinWidth="25" MinHeight="25" Click="ReDrawButton_Click"/>
                         <Button Content="♰" Grid.Column="1" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="2" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="3" MinWidth="25" MinHeight="25"/>
@@ -294,7 +293,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
             <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
                 <StackPanel>
                     <TextBlock x:Name="PicketNameTextBox" TextWrapping="Wrap" Text="Пикет 4" Background="#FFF2FFFE" VerticalAlignment="Top"/>
-                    <DataGrid x:Name="PointsDataGrid" Height="171" ItemsSource="{Binding Points}" VerticalAlignment="Top" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Grid.Row="0">
+                    <DataGrid x:Name="PointsDataGrid" Height="171" ItemsSource="{Binding PointsInPicket}" VerticalAlignment="Top" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Grid.Row="0">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID Точки" 
                       Binding="{Binding Id}" 
