@@ -8,6 +8,7 @@ namespace Core.Abstractions
 {
     public abstract class BaseModel
     {
+        public int Id { get; protected set; }
         public override string ToString()
         {
             var properties = GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);

@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class Position : BaseModel
     {
-        public int Id { get; private set; }
 
         public string Name { get; private set; }
 

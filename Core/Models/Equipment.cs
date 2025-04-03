@@ -9,13 +9,12 @@ namespace Core.Models
 {
     public class Equipment : BaseModel
     {
-        public int Id { get; private set; }
 
-        public string Name { get; private set; }
+        public string Name { get; protected set; }
 
-        public string SerialNumber { get; private set; }
+        public string SerialNumber { get; protected set; }
 
-        private Equipment(int idEquipment, string name, string serialNumber)
+        protected Equipment(int idEquipment, string name, string serialNumber)
         {
             Id = idEquipment; Name = name; SerialNumber = serialNumber;
         }

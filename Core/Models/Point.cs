@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class Point : BaseModel
     {
-        public int Id { get; protected set; }
 
         public double X { get; protected set; }
 

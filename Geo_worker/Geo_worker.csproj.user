@@ -2,10 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AddPointsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AuthWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ConfirmCoordinateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ImportProjectWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ObjectPropertiesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SelectObjectTypeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class Report : BaseModel
     {
-        public int Id { get; private set; }
 
         public int? IdEmployee { get; private set; }
 

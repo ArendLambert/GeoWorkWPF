@@ -9,15 +9,14 @@ namespace Core.Models
 {
     public class Employee : BaseModel
     {
-        public int Id { get; private set; }
 
-        public string Passport { get; private set; } = string.Empty;
+        public string Passport { get; protected set; } = string.Empty;
 
-        public int? IdPosition { get; private set; }
-        public string Password { get; private set; } = string.Empty;
-        public string Login { get; private set; } = string.Empty;
+        public int? IdPosition { get; protected set; }
+        public string Password { get; protected set; } = string.Empty;
+        public string Login { get; protected set; } = string.Empty;
 
-        private Employee(int idEmployee, string passport, int? idPosition, string password, string login)
+        protected Employee(int idEmployee, string passport, int? idPosition, string password, string login)
         {
             Id = idEmployee;
             Passport = passport;

@@ -102,22 +102,22 @@
 
 
                 <ScrollViewer VerticalScrollBarVisibility="Auto" Height="730" BorderBrush="#FF9A9A9A" Background="#FF868686">
-                <TreeView x:Name="ProjectTreeView"  MouseUp="ProjectTreeView_MouseClick" MouseDoubleClick="ProjectTreeView_MouseDoubleClick" Background="#FFEDEDED" OpacityMask="Red" Foreground="Black" BorderBrush="#FF005BFF" >
-                    <TreeViewItem Header="dsfa" Background="White" OpacityMask="Black">
-                        <TreeViewItem Header="dsfa">
+                    <TreeView x:Name="ProjectTreeView"  MouseUp="ProjectTreeView_MouseClick" MouseDoubleClick="ProjectTreeView_MouseDoubleClick" Background="#FFEDEDED" OpacityMask="Red" Foreground="Black" BorderBrush="#FF005BFF" >
+                        <TreeViewItem Header="dsfa" Background="White" OpacityMask="Black">
                             <TreeViewItem Header="dsfa">
-                                <TreeViewItem Header="dsfa" />
-                                <TreeViewItem Header="dsfa" />
-                                <TreeViewItem Header="dsfa" />
-                            </TreeViewItem>
-                            <TreeViewItem Header="dsfa">
-                                <TreeViewItem Header="dsfa" />
-                                <TreeViewItem Header="dsfa" />
-                                <TreeViewItem Header="dsfa" />
+                                <TreeViewItem Header="dsfa">
+                                    <TreeViewItem Header="dsfa" />
+                                    <TreeViewItem Header="dsfa" />
+                                    <TreeViewItem Header="dsfa" />
+                                </TreeViewItem>
+                                <TreeViewItem Header="dsfa">
+                                    <TreeViewItem Header="dsfa" />
+                                    <TreeViewItem Header="dsfa" />
+                                    <TreeViewItem Header="dsfa" />
+                                </TreeViewItem>
                             </TreeViewItem>
                         </TreeViewItem>
-                    </TreeViewItem>
-                </TreeView>
+                    </TreeView>
                 </ScrollViewer>
 
 
@@ -173,7 +173,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                 </Grid>
 
                 <Border BorderThickness="2" BorderBrush="Black" Width="350">
-                    
+
                     <StackPanel>
                         <Grid Grid.Row="1" Background="LightGray">
                             <Grid Margin="10">
@@ -253,8 +253,8 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         <Button x:Name="ReDrawButton" Content="⟳" Grid.Column="0" MinWidth="25" MinHeight="25" Click="ReDrawButton_Click"/>
-                        <Button Content="♰" Grid.Column="1" MinWidth="25" MinHeight="25"/>
-                        <Button Content="♰" Grid.Column="2" MinWidth="25" MinHeight="25"/>
+                        <Button x:Name="LoadSyntheticDataButton" Content="⇲" Grid.Column="1" MinWidth="25" MinHeight="25" Click="LoadSyntheticDataButton_Click"/>
+                        <Button x:Name="DeleteSyntheticDataButton" Content="⛝" Grid.Column="2" MinWidth="25" MinHeight="25" Click="DeleteSyntheticDataButton_Click"/>
                         <Button Content="♰" Grid.Column="3" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="4" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="5" MinWidth="25" MinHeight="25"/>
@@ -284,7 +284,11 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
 
         <!-- Центральный блок -->
         <Grid Grid.Column="1" Grid.Row="1" Background="#FF5F5F5F" Margin="0,0,50,40" Grid.RowSpan="2">
-            <Canvas x:Name="DrawingCanvas" Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="663*"/>
+            </Grid.ColumnDefinitions>
+            <Canvas x:Name="DrawingCanvas" MouseRightButtonDown="DrawingCanvas_MouseRightButtonDown" Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red" Grid.ColumnSpan="2"/>
 
         </Grid>
 

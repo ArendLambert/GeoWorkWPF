@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class ProfileCoordinate : BaseModel
     {
-        public int Id { get; private set; }
 
         public int? IdProfile { get; private set; }
 

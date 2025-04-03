@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class Project : BaseModel
     {
-        public int Id { get; protected set; }
 
         public string Name { get; protected set; }
 

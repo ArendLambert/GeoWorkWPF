@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class PicketCoordinate : BaseModel
     {
-        public int Id { get; private set; }
 
         public int? IdPicket { get; private set; }
 

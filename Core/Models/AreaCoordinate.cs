@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class AreaCoordinate : BaseModel
     {
-        public int Id { get; private set; }
 
         public int? IdSquare { get; private set; }
 

@@ -1,0 +1,85 @@
+﻿<Window x:Class="Geo_worker.AddPointsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Geo_worker"
+        mc:Ignorable="d"
+        Title="Add/Edit Point" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- X Coordinate -->
+        <Label Grid.Row="1" Grid.Column="0" Content="X координата:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtX" Margin="0,0,0,10"/>
+
+        <!-- Y Coordinate -->
+        <Label Grid.Row="2" Grid.Column="0" Content="Y координата:"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtY" Margin="0,0,0,10"/>
+
+        <!-- Gravity -->
+        <Label Grid.Row="3" Grid.Column="0" Content="Гравитация:"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtGravity" Margin="0,0,0,10"/>
+
+        <!-- Gravity Anomaly -->
+        <Label Grid.Row="4" Grid.Column="0" Content="Аномалия гравитации:"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtGravityAnomaly" Margin="0,0,0,10"/>
+
+        <!-- Amendments -->
+        <Label Grid.Row="5" Grid.Column="0" Content="Высота над уровнем моря:"/>
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="txtAmendments" Margin="0,0,0,10"/>
+
+        <!-- DateTime -->
+        <Label Grid.Row="6" Grid.Column="0" Content="Дата:"/>
+        <DatePicker Grid.Row="6" Grid.Column="1" x:Name="dpDateTime" Margin="0,0,0,10"/>
+
+        <!-- Operator ID -->
+        <Label Grid.Row="7" Grid.Column="0" Content="Operator:"/>
+        <ComboBox Grid.Row="7" Grid.Column="1" x:Name="cbOperatorId" 
+          Margin="0,0,0,10"
+          ItemsSource="{Binding Operators}"
+          DisplayMemberPath="Passport"
+          SelectedValuePath="Id"
+          SelectedValue="{Binding SelectedOperatorId, Mode=TwoWay}"/>
+
+        <!-- Equipment ID -->
+        <Label Grid.Row="8" Grid.Column="0" Content="Equipment:"/>
+        <ComboBox Grid.Row="8" Grid.Column="1" x:Name="cbEquipmentId" 
+          Margin="0,0,0,10"
+          ItemsSource="{Binding Equipment}"
+          DisplayMemberPath="Name"
+          SelectedValuePath="Id"
+          SelectedValue="{Binding SelectedEquipmentId, Mode=TwoWay}"/>
+
+        <!-- Picket ID -->
+        <Label Grid.Row="9" Grid.Column="0" Content="Picket:"/>
+        <ComboBox Grid.Row="9" Grid.Column="1" x:Name="cbPicketId" 
+          Margin="0,0,0,20"
+          ItemsSource="{Binding Pickets}"
+          DisplayMemberPath="Name"
+          SelectedValuePath="Id"
+          SelectedValue="{Binding SelectedPicketId, Mode=TwoWay}"/>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="10" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnSave" Content="Save" Width="80" Margin="0,0,10,0" Click="BtnSave_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" Width="80" Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

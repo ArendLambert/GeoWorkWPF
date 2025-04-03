@@ -495,3 +495,11 @@ C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\Aut
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ImportProjectWindow.g.cs
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\AuthWindow.baml
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ImportProjectWindow.baml
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\AddPointsWindow.g.cs
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\AddPointsWindow.baml
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ConfirmCoordinateWindow.baml
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\SelectObjectTypeWindow.baml
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ConfirmCoordinateWindow.g.cs
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\SelectObjectTypeWindow.g.cs
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ObjectPropertiesWindow.baml
+C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\obj\Debug\net8.0-windows\ObjectPropertiesWindow.g.cs

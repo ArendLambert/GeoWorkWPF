@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class AuditLogs : BaseModel
     {
-        public int Id { get; private set; }
         public DateTime ChangeDateTime { get; private set; } = DateTime.Now;
         public string OldValue { get; private set; } = String.Empty;
         public string NewValue { get; private set; } = String.Empty;

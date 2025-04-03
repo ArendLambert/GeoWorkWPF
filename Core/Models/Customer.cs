@@ -9,7 +9,6 @@ namespace Core.Models
 {
     public class Customer : BaseModel
     {
-        public int Id { get; private set; }
         public string Name { get; private set; } = string.Empty;
         public string Password { get; private set; } = string.Empty;
         public string Login { get; private set; } = string.Empty;

@@ -9,13 +9,12 @@ namespace Core.Models
 {
     public class Picket : BaseModel
     {
-        public int Id { get; private set; }
 
-        public string Name { get; private set; }
+        public string Name { get; protected set; }
 
-        public int? IdProfile { get; private set; }
+        public int? IdProfile { get; protected set; }
 
-        private Picket (int id, string name, int? idProfile)
+        protected Picket (int id, string name, int? idProfile)
         {
             Id = id;
             Name = name;
