@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\cikor\Desktop\GeoWorkWPF-master\Geo_worker\App.xaml
-71230375525
+11-611920267
 
-1788932945
-231-2063091594
-AddPointsWindow.xaml;AuthWindow.xaml;ConfirmCoordinateWindow.xaml;ImportProjectWindow.xaml;MainWindow.xaml;ObjectPropertiesWindow.xaml;SelectObjectTypeWindow.xaml;
+22417328979
+259-2050164495
+AddPointsWindow.xaml;AuthWindow.xaml;ConfirmCoordinateWindow.xaml;EditPicketWindow.xaml;EditPointWindow.xaml;EditProfileWindow.xaml;EditSquareWindow.xaml;ImportProjectWindow.xaml;MainWindow.xaml;ObjectPropertiesWindow.xaml;SelectObjectTypeWindow.xaml;
 
 False
 

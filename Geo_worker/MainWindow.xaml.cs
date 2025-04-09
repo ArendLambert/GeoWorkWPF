@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -34,6 +35,21 @@ public partial class MainWindow : Window
     public Project SelectedProject { get; private set; }
     public ObservableCollection<DisplayPoint> PointsInPicket { get; private set; } = new ObservableCollection<DisplayPoint>();
     public ObservableCollection<Layer> Layers { get; private set; } = new ObservableCollection<Layer>();
+    private object _selectedItem;
+    public object SelectedItem
+    {
+        get
+        {
+            return _selectedItem;
+        }
+        private set
+        {
+            _selectedItem = value;
+            NotifyChangeSelectedItem?.Invoke();
+        }
+    }
+    public delegate Task ItemHandler();
+    public event ItemHandler NotifyChangeSelectedItem;
 
     private UnitOfWork _unitOfWork;
 
@@ -46,7 +62,7 @@ public partial class MainWindow : Window
         MainLayerDrawer = new LayerDrawer(DrawingCanvas);
         MessageBox.Show(MainLayerDrawer.ToString());
         string mainimgsrc = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "1.jpg");
-        mainImage.Source = new BitmapImage(new Uri(mainimgsrc, UriKind.Absolute));
+        //mainImage.Source = new BitmapImage(new Uri(mainimgsrc, UriKind.Absolute));
         LockBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "lock.png"), UriKind.Absolute)));
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
         UserId = userId;
@@ -64,14 +80,14 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        
+
         MainLayerDrawer = new LayerDrawer(DrawingCanvas);
         string mainimgsrc = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "1.jpg");
-        mainImage.Source = new BitmapImage(new Uri(mainimgsrc, UriKind.Absolute));
+        //mainImage.Source = new BitmapImage(new Uri(mainimgsrc, UriKind.Absolute));
         LockBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "lock.png"), UriKind.Absolute)));
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
         DataContext = this;
-
+        NotifyChangeSelectedItem += ChangeSelectItem;
         _unitOfWork = new UnitOfWork(new GravitySurveyOnDeleteNoAction(), UserId);
         ClearFields().GetAwaiter();
 
@@ -80,6 +96,97 @@ public partial class MainWindow : Window
         //DBClear().GetAwaiter();
         //Draw();
 
+    }
+
+    private async Task ChangeSelectItem()
+    {
+        SelectedObjectPanel.Visibility = Visibility.Collapsed; // Скрываем панель по умолчанию
+
+        if (SelectedItem is TreeViewItem item)
+        {
+            string tag = item.Tag.ToString();
+            string[] parts = tag.Split(' ');
+            string type = parts[0];
+            int id = int.Parse(parts[1]);
+
+            switch (type)
+            {
+                case "Square":
+                    var square = await _unitOfWork.SquareRepository.GetById(id);
+                    if (square != null)
+                    {
+                        ObjectNameLabel.Content = square.Name;
+                        //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "square.png")));
+                        SelectedObjectPanel.Tag = square;
+                        SelectedObjectPanel.Visibility = Visibility.Visible;
+                    }
+                    break;
+                case "Profile":
+                    var profile = await _unitOfWork.ProfileRepository.GetById(id);
+                    if (profile != null)
+                    {
+                        ObjectNameLabel.Content = profile.Name;
+                        //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "profile.png")));
+                        SelectedObjectPanel.Tag = profile;
+                        SelectedObjectPanel.Visibility = Visibility.Visible;
+                    }
+                    break;
+                case "Picket":
+                    var picket = await _unitOfWork.PicketRepository.GetById(id);
+                    if (picket != null)
+                    {
+                        ObjectNameLabel.Content = picket.Name;
+                        //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "picket.png")));
+                        SelectedObjectPanel.Tag = picket;
+                        SelectedObjectPanel.Visibility = Visibility.Visible;
+                    }
+                    break;
+                case "Point":
+                    var point = await _unitOfWork.PointRepository.GetById(id);
+                    if (point != null)
+                    {
+                        ObjectNameLabel.Content = "Точка " + point.Id;
+                        //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "picket.png")));
+                        SelectedObjectPanel.Tag = point;
+                        SelectedObjectPanel.Visibility = Visibility.Visible;
+                    }
+                    break;
+                    break;
+            }
+        }
+        else if (SelectedItem is Shape shape)
+        {
+            string idStr = shape.Tag.ToString();
+            int id = int.Parse(idStr);
+            var square = _unitOfWork.SquareRepository.GetById(id).GetAwaiter().GetResult();
+            if (square != null)
+            {
+                ObjectNameLabel.Content = square.Name;
+                //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "square.png")));
+                SelectedObjectPanel.Tag = square;
+            }
+            else
+            {
+                var profile = _unitOfWork.ProfileRepository.GetById(id).GetAwaiter().GetResult();
+                if (profile != null)
+                {
+                    ObjectNameLabel.Content = profile.Name;
+                    //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "profile.png")));
+                    SelectedObjectPanel.Tag = profile;
+                }
+                else
+                {
+                    var picket = _unitOfWork.PicketRepository.GetById(id).GetAwaiter().GetResult();
+                    if (picket != null)
+                    {
+                        ObjectNameLabel.Content = picket.Name;
+                        //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "picket.png")));
+                        SelectedObjectPanel.Tag = picket;
+                    }
+                }
+            }
+            SelectedObjectPanel.Visibility = Visibility.Visible;
+        }
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -176,7 +283,7 @@ public partial class MainWindow : Window
             squareView.Header = square.Name;
             squareView.Tag = "Square " + square.Id;
             projectsView.Items.Add(squareView);
-            foreach(Profile profile in profilesCollection.Where(p => p.IdSquare == square.Id))
+            foreach (Profile profile in profilesCollection.Where(p => p.IdSquare == square.Id))
             {
                 TreeViewItem profileView = new TreeViewItem();
                 profileView.Header = profile.Name;
@@ -203,9 +310,11 @@ public partial class MainWindow : Window
 
     private async void ProjectTreeView_MouseClick(object sender, MouseButtonEventArgs e)
     {
+        TreeViewItem itemTemp = null;
         if (ProjectTreeView.SelectedItem as TreeViewItem is TreeViewItem item)
         {
-            if(item.Tag.ToString().Contains("Picket"))
+            itemTemp = item;
+            if (item.Tag.ToString().Contains("Picket"))
             {
                 int idPicket = int.Parse(item.Tag.ToString().Split(' ')[1]);
                 Picket? picket = await _unitOfWork.PicketRepository.GetById(idPicket);
@@ -215,6 +324,8 @@ public partial class MainWindow : Window
             }
         }
         await WriteSquareNameInTreeView(ProjectTreeView, ProjectTreeView.SelectedItem as TreeViewItem);
+        SelectedItem = itemTemp;
+
     }
 
     private async Task WriteSquareNameInTreeView(TreeView treeView, TreeViewItem treeViewItem)
@@ -305,20 +416,21 @@ public partial class MainWindow : Window
 
     private async Task DrawSquares()
     {
-        if(SelectedProject == null)
+        if (SelectedProject == null)
         {
             return;
         }
         Debug.WriteLine("DrawSquares");
-        
+
         LayerBuilder builder = new LayerBuilder();
-        builder.OnShapeClicked = async(shape, e) =>
+        builder.OnShapeClicked = async (shape, e) =>
         {
             if (shape is Shape s)
             {
                 if (s is Polygon polygon)
                 {
                     //MessageBox.Show(polygon.Tag.ToString());
+                    //SelectedItem = polygon;
                     await DrawProfiles(int.Parse(polygon.Tag.ToString()));
                 }
             }
@@ -357,12 +469,14 @@ public partial class MainWindow : Window
             }
         }
         LayerBuilder builder = new LayerBuilder();
-        builder.OnShapeClicked = async(shape, e) =>
+        builder.OnShapeClicked = async (shape, e) =>
         {
             if (shape is Shape s)
             {
                 if (s is Polygon polygon)
                 {
+                    //SelectedItem = polygon;
+
                     await DrawPickets(int.Parse(polygon.Tag.ToString()));
 
                 }
@@ -388,7 +502,7 @@ public partial class MainWindow : Window
     }
 
     private async Task DrawPickets(int idProfile)
-    {       
+    {
         LayerBuilder builder = new LayerBuilder();
         builder.OnShapeClicked = async (shape, e) =>
         {
@@ -396,6 +510,8 @@ public partial class MainWindow : Window
             {
                 if (s is Line line)
                 {
+                    //SelectedItem = line;
+
                     await DrawPonts(int.Parse(line.Tag.ToString()));
                     await PointTableInitialize(int.Parse(line.Tag.ToString()));
                 }
@@ -454,6 +570,8 @@ public partial class MainWindow : Window
             {
                 if (s is Ellipse ellipse)
                 {
+                    //SelectedItem = ellipse;
+
                     MessageBox.Show("Точка " + ellipse.Tag.ToString());
                 }
             }
@@ -578,7 +696,7 @@ public partial class MainWindow : Window
         );
 
         // Открываем окно для редактирования точки
-        AddPointsWindow addPointsWindow = new AddPointsWindow(UserId, SelectedProject.Id, newPoint );
+        AddPointsWindow addPointsWindow = new AddPointsWindow(UserId, SelectedProject.Id, newPoint);
         if (addPointsWindow.ShowDialog() == true)
         {
             Core.Models.Point createdPoint = addPointsWindow.GetPoint();
@@ -882,4 +1000,165 @@ public partial class MainWindow : Window
         await DBClear();
         MessageBox.Show("Данные удалены!!");
     }
+
+
+    private async void DeleteObject_Click(object sender, RoutedEventArgs e)
+    {
+        int? id = null;
+        string objectName = null;
+        string objectType = null;
+
+        // Определяем выбранный объект
+        if (SelectedItem is TreeViewItem treeItem)
+        {
+            string tag = treeItem.Tag.ToString();
+            string[] parts = tag.Split(' ');
+            objectType = parts[0];
+            id = int.Parse(parts[1]);
+            objectName = treeItem.Header.ToString(); // Имя из TreeViewItem
+        }
+        else if (SelectedItem is Shape shape)
+        {
+            if (shape.Tag == null)
+                return;
+
+            id = int.Parse(shape.Tag.ToString());
+            // Предполагаем, что имя хранится где-то в другом месте, например, в коллекции или модели
+            // Здесь нужно добавить логику получения имени, если она есть
+        }
+
+        if (id == null || objectType == null && SelectedItem is TreeViewItem || SelectedItem is Shape)
+        {
+            MessageBox.Show("Не удалось определить объект для удаления.");
+            return;
+        }
+
+        // Подтверждение удаления
+        string nameToShow = objectName ?? $"объект с ID {id}";
+        var result = MessageBox.Show($"Вы уверены, что хотите удалить '{nameToShow}'?", "Подтверждение удаления", MessageBoxButton.YesNo);
+        if (result != MessageBoxResult.Yes)
+            return;
+
+        // Удаление в зависимости от типа объекта
+        if (SelectedItem is TreeViewItem)
+        {
+            switch (objectType)
+            {
+                case "Square":
+                    await _unitOfWork.SquareRepository.Delete(id.Value);
+                    break;
+                case "Profile":
+                    await _unitOfWork.ProfileRepository.Delete(id.Value);
+                    break;
+                case "Picket":
+                    await _unitOfWork.PicketRepository.Delete(id.Value);
+                    break;
+                default:
+                    MessageBox.Show("Неподдерживаемый тип объекта.");
+                    return;
+            }
+        }
+        else if (SelectedItem is Shape)
+        {
+            // Определяем тип объекта по ID (предполагается, что Shape.Tag содержит ID)
+            var square = await _unitOfWork.SquareRepository.GetById(id.Value);
+            if (square != null)
+            {
+                await _unitOfWork.SquareRepository.Delete(id.Value);
+            }
+            else
+            {
+                var profile = await _unitOfWork.ProfileRepository.GetById(id.Value);
+                if (profile != null)
+                {
+                    await _unitOfWork.ProfileRepository.Delete(id.Value);
+                }
+                else
+                {
+                    var picket = await _unitOfWork.PicketRepository.GetById(id.Value);
+                    if (picket != null)
+                    {
+                        await _unitOfWork.PicketRepository.Delete(id.Value);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Объект не найден в базе данных.");
+                        return;
+                    }
+                }
+            }
+        }
+
+        // Обновление UI
+        MainLayerDrawer.ClearCanvas();
+        await DrawSquares();
+        await LoadProjectsInTree();
+    }
+
+    private async void EditObject_Click(object sender, RoutedEventArgs e)
+    {
+        if (SelectedItem is TreeViewItem item)
+        {
+            string tag = item.Tag.ToString();
+            string[] parts = tag.Split(' ');
+            string type = parts[0];
+            int id = int.Parse(parts[1]);
+
+            switch (type)
+            {
+                case "Square":
+                    var square = await _unitOfWork.SquareRepository.GetById(id);
+                    if (square != null)
+                    {
+                        EditSquareWindow squareWindow = new EditSquareWindow(_unitOfWork, square);
+                        MessageBox.Show("!!!");
+                        if (squareWindow.ShowDialog() == true)
+                        {
+                            await LoadProjectsInTree();
+                        }
+                    }
+                    break;
+                case "Profile":
+                    var profile = await _unitOfWork.ProfileRepository.GetById(id);
+                    if (profile != null)
+                    {
+                        EditProfileWindow profileWindow = new EditProfileWindow(_unitOfWork, profile);
+                        if (profileWindow.ShowDialog() == true)
+                        {
+                            await LoadProjectsInTree();
+
+                        }
+                    }
+                    break;
+                case "Picket":
+                    var picket = await _unitOfWork.PicketRepository.GetById(id);
+                    if (picket != null)
+                    {
+                        EditPicketWindow picketWindow = new EditPicketWindow(_unitOfWork, picket);
+                        if (picketWindow.ShowDialog() == true)
+                        {
+                            await LoadProjectsInTree();
+
+                        }
+                    }
+                    break;
+                case "Point":
+                    var point = await _unitOfWork.PointRepository.GetById(id);
+                    if (point != null)
+                    {
+                        EditPointWindow pointWindow = new EditPointWindow(_unitOfWork, point);
+                        if (pointWindow.ShowDialog() == true)
+                        {
+                            await LoadProjectsInTree();
+
+                        }
+                    }
+                    break;
+            }
+
+            MainLayerDrawer.ClearCanvas();
+            await DrawSquares();
+        }
+    }
 }
+

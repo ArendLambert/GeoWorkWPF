@@ -1,0 +1,64 @@
+﻿<Window x:Class="Geo_worker.EditPointWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактирование Point" Height="450" Width="400" Loaded="EditPointWindow_Loaded">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="X:"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtX" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Y:"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtY" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Гравитация:"/>
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtGravity" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Аномалия гравитации:"/>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtGravityAnomaly" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Content="Поправки:"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtAmendments" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Content="Дата и время:"/>
+            <DatePicker Grid.Row="5" Grid.Column="1" x:Name="dpDatetime" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Content="Оператор:"/>
+            <ComboBox Grid.Row="6" Grid.Column="1" x:Name="cbOperator" 
+                      DisplayMemberPath="Name" SelectedValuePath="Id" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="7" Grid.Column="0" Content="Оборудование:"/>
+            <ComboBox Grid.Row="7" Grid.Column="1" x:Name="cbEquipment" 
+                      DisplayMemberPath="Name" SelectedValuePath="Id" Margin="0,0,0,5"/>
+
+            <Label Grid.Row="8" Grid.Column="0" Content="Picket:"/>
+            <ComboBox Grid.Row="8" Grid.Column="1" x:Name="cbPicket" 
+                      DisplayMemberPath="Name" SelectedValuePath="Id" Margin="0,0,0,5"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnSave" Content="Сохранить" Width="80" Margin="0,0,10,0" Click="BtnSave_Click"/>
+            <Button x:Name="btnCancel" Content="Отменить" Width="80" Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

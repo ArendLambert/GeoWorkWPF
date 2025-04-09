@@ -11,6 +11,18 @@
     <Compile Update="ConfirmCoordinateWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditPicketWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditPointWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditProfileWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditSquareWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ImportProjectWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

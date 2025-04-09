@@ -8,8 +8,8 @@ namespace Geo_worker
 {
     public partial class ObjectPropertiesWindow : Window
     {
-        public string ObjectName { get; private set; }
-        public int? SelectedParentId { get; private set; }
+        public string ObjectName { get; set; }
+        public int? SelectedParentId { get; set; }
 
         public ObjectPropertiesWindow(string title, List<BaseModel> parentItems)
         {
