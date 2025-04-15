@@ -211,8 +211,8 @@
                         <Button x:Name="ReDrawButton" Content="⟳" Grid.Column="0" MinWidth="25" MinHeight="25" Click="ReDrawButton_Click"/>
                         <Button x:Name="LoadSyntheticDataButton" Content="⇲" Grid.Column="1" MinWidth="25" MinHeight="25" Click="LoadSyntheticDataButton_Click"/>
                         <Button x:Name="DeleteSyntheticDataButton" Content="⛝" Grid.Column="2" MinWidth="25" MinHeight="25" Click="DeleteSyntheticDataButton_Click"/>
-                        <Button Content="♰" Grid.Column="3" MinWidth="25" MinHeight="25"/>
-                        <Button Content="♰" Grid.Column="4" MinWidth="25" MinHeight="25"/>
+                        <Button x:Name="DataEditButton" Content="🛠" Grid.Column="3" MinWidth="25" MinHeight="25" Click="ManageEntities_Click"/>
+                        <Button x:Name="CreateProjectButton" Content="✎" Grid.Column="4" MinWidth="25" MinHeight="25" Click="CreateProjectButton_Click"/>
                         <Button Content="♰" Grid.Column="5" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="6" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="7" MinWidth="25" MinHeight="25"/>
@@ -244,7 +244,11 @@
                 <ColumnDefinition Width="22*"/>
                 <ColumnDefinition Width="663*"/>
             </Grid.ColumnDefinitions>
-            <Canvas x:Name="DrawingCanvas" MouseRightButtonDown="DrawingCanvas_MouseRightButtonDown" Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red" Grid.ColumnSpan="2"/>
+            <Canvas x:Name="DrawingCanvas" MouseRightButtonDown="DrawingCanvas_MouseRightButtonDown" Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red" Grid.ColumnSpan="2" MouseWheel="DrawingCanvas_MouseWheel">
+                <Canvas.RenderTransform>
+                    <ScaleTransform x:Name="CanvasScaleTransform" ScaleX="1" ScaleY="1"/>
+                </Canvas.RenderTransform>
+            </Canvas>
 
         </Grid>
 
@@ -293,7 +297,7 @@
                         </Grid.ColumnDefinitions>
 
                         <Button Content="Свойства" Grid.Column="0" Margin="0,0,0,1" MinWidth="150"/>
-                        <Button Content="Значения" Grid.Column="1" Margin="0,0,0,1" MinWidth="150"/>
+                        <Button x:Name="GraphButton" Content="График" Grid.Column="1" Margin="0,0,0,1" MinWidth="150" IsEnabled="False" Click="GraphButton_Click"/>
                         <Button Content="Ошибки" Grid.Column="2" Margin="0,0,0,1" MinWidth="150"/>
                     </Grid>
                 </StackPanel>

@@ -84,7 +84,7 @@ namespace Geo_worker {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Geo_worker;V1.0.0.0;component/confirmcoordinatewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Geo_worker;component/confirmcoordinatewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ConfirmCoordinateWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

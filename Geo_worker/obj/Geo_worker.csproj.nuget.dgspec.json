@@ -221,6 +221,10 @@
             "Microsoft.TeamFoundationServer.ExtendedClient": {
               "target": "Package",
               "version": "[19.225.1, )"
+            },
+            "OxyPlot.Wpf": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [

@@ -11,6 +11,21 @@
     <Compile Update="ConfirmCoordinateWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreateProjectWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditCustomerTypeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditCustomerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditEquipmentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EditPicketWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -20,7 +35,16 @@
     <Compile Update="EditProfileWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditReportWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EditSquareWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EntityManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GravityAnomalyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ImportProjectWindow.xaml.cs">

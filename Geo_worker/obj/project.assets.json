@@ -1346,6 +1346,58 @@
           }
         }
       },
+      "OxyPlot.Core/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OxyPlot.Wpf/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.2.0",
+          "OxyPlot.Wpf.Shared": "2.2.0"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/OxyPlot.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/OxyPlot.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "OxyPlot.Wpf.Shared/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.2.0"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/OxyPlot.Wpf.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/OxyPlot.Wpf.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -5806,6 +5858,67 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "OxyPlot.Core/2.2.0": {
+      "sha512": "QhXNdXR5FPpro/VoLx3BOp6AhQo7YrbfmWEZ9cgY+pnYM7RYORZjnu+aDMA8ka9A1r8hLkX//NbCPZNUv+l8qA==",
+      "type": "package",
+      "path": "oxyplot.core/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "README.md",
+        "lib/net462/OxyPlot.dll",
+        "lib/net462/OxyPlot.xml",
+        "lib/net6.0/OxyPlot.dll",
+        "lib/net6.0/OxyPlot.xml",
+        "lib/net8.0/OxyPlot.dll",
+        "lib/net8.0/OxyPlot.xml",
+        "lib/netstandard2.0/OxyPlot.dll",
+        "lib/netstandard2.0/OxyPlot.xml",
+        "oxyplot.core.2.2.0.nupkg.sha512",
+        "oxyplot.core.nuspec"
+      ]
+    },
+    "OxyPlot.Wpf/2.2.0": {
+      "sha512": "69KzgsMWpJSZmeXZt07FwfV7B1D4CM1nl0MWMj4wjrCsb3USBMo32up1+fQIjxp5tHCPdGwX9VWhSxW8nsY7pQ==",
+      "type": "package",
+      "path": "oxyplot.wpf/2.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "README.md",
+        "lib/net462/OxyPlot.Wpf.dll",
+        "lib/net462/OxyPlot.Wpf.xml",
+        "lib/net6.0-windows7.0/OxyPlot.Wpf.dll",
+        "lib/net6.0-windows7.0/OxyPlot.Wpf.xml",
+        "lib/net8.0-windows7.0/OxyPlot.Wpf.dll",
+        "lib/net8.0-windows7.0/OxyPlot.Wpf.xml",
+        "oxyplot.wpf.2.2.0.nupkg.sha512",
+        "oxyplot.wpf.nuspec",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "OxyPlot.Wpf.Shared/2.2.0": {
+      "sha512": "JoOD/feTOlKFmgXqeTNrl4Ze0i0L6WizPapNw9pXwot+cnI0qhFgYv3tFjlSdu51hZw0EgmcgeRXMtm5bkueYA==",
+      "type": "package",
+      "path": "oxyplot.wpf.shared/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "README.md",
+        "lib/net462/OxyPlot.Wpf.Shared.dll",
+        "lib/net462/OxyPlot.Wpf.Shared.xml",
+        "lib/net6.0-windows7.0/OxyPlot.Wpf.Shared.dll",
+        "lib/net6.0-windows7.0/OxyPlot.Wpf.Shared.xml",
+        "lib/net8.0-windows7.0/OxyPlot.Wpf.Shared.dll",
+        "lib/net8.0-windows7.0/OxyPlot.Wpf.Shared.xml",
+        "oxyplot.wpf.shared.2.2.0.nupkg.sha512",
+        "oxyplot.wpf.shared.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -10367,7 +10480,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.3",
-      "Microsoft.TeamFoundationServer.ExtendedClient >= 19.225.1"
+      "Microsoft.TeamFoundationServer.ExtendedClient >= 19.225.1",
+      "OxyPlot.Wpf >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -10451,6 +10565,10 @@
           "Microsoft.TeamFoundationServer.ExtendedClient": {
             "target": "Package",
             "version": "[19.225.1, )"
+          },
+          "OxyPlot.Wpf": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           }
         },
         "imports": [

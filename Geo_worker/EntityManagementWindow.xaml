@@ -1,0 +1,37 @@
+﻿<Window x:Class="Geo_worker.EntityManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Управление сущностями" Height="500" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Выбор типа сущности -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Content="Тип сущности:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="EntityTypeComboBox" Width="200" SelectionChanged="EntityTypeComboBox_SelectionChanged">
+                <ComboBoxItem Content="Project"/>
+                <ComboBoxItem Content="Customer"/>
+                <ComboBoxItem Content="CustomerType"/>
+                <ComboBoxItem Content="Employee"/>
+                <ComboBoxItem Content="Equipment"/>
+                <ComboBoxItem Content="Report"/>
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Список сущностей -->
+        <DataGrid Grid.Row="1" x:Name="EntitiesDataGrid" AutoGenerateColumns="True" IsReadOnly="True" 
+                  SelectionMode="Single" Margin="0,0,0,10"/>
+
+        <!-- Кнопки управления -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Добавить" Width="80" Margin="0,0,10,0" Click="AddButton_Click"/>
+            <Button Content="Изменить" Width="80" Margin="0,0,10,0" Click="EditButton_Click"/>
+            <Button Content="Удалить" Width="80" Margin="0,0,10,0" Click="DeleteButton_Click"/>
+            <Button Content="Закрыть" Width="80" Click="CloseButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -33,6 +33,7 @@ public partial class MainWindow : Window
     public ImageBrush EyeBrush { get; set; }
     public int UserId { get; private set; } = 0;
     public Project SelectedProject { get; private set; }
+    private Picket _selectedPicket;
     public ObservableCollection<DisplayPoint> PointsInPicket { get; private set; } = new ObservableCollection<DisplayPoint>();
     public ObservableCollection<Layer> Layers { get; private set; } = new ObservableCollection<Layer>();
     private object _selectedItem;
@@ -52,6 +53,12 @@ public partial class MainWindow : Window
     public event ItemHandler NotifyChangeSelectedItem;
 
     private UnitOfWork _unitOfWork;
+    private double _zoomFactor = 1.0;
+    private const double ZoomSpeed = 0.1;
+    private const double MinZoom = 0.1;
+    private const double MaxZoom = 10.0;
+    private System.Windows.Point _lastMousePosition;
+    private bool _isDragging;
 
     private List<PointDraw> tempCoordinates = new List<PointDraw>();
     public LayerDrawer MainLayerDrawer { get; private set; }
@@ -75,6 +82,10 @@ public partial class MainWindow : Window
         //DBClear().GetAwaiter();
         //Draw();
 
+        DrawingCanvas.MouseDown += DrawingCanvas_MouseDown;
+        DrawingCanvas.MouseMove += DrawingCanvas_MouseMove;
+        DrawingCanvas.MouseUp += DrawingCanvas_MouseUp;
+
     }
 
     public MainWindow()
@@ -96,6 +107,10 @@ public partial class MainWindow : Window
         //DBClear().GetAwaiter();
         //Draw();
 
+        DrawingCanvas.MouseDown += DrawingCanvas_MouseDown;
+        DrawingCanvas.MouseMove += DrawingCanvas_MouseMove;
+        DrawingCanvas.MouseUp += DrawingCanvas_MouseUp;
+
     }
 
     private async Task ChangeSelectItem()
@@ -108,7 +123,7 @@ public partial class MainWindow : Window
             string[] parts = tag.Split(' ');
             string type = parts[0];
             int id = int.Parse(parts[1]);
-
+            GraphButton.IsEnabled = false;
             switch (type)
             {
                 case "Square":
@@ -139,26 +154,32 @@ public partial class MainWindow : Window
                         //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "picket.png")));
                         SelectedObjectPanel.Tag = picket;
                         SelectedObjectPanel.Visibility = Visibility.Visible;
+                        _selectedPicket = picket;
+                        GraphButton.IsEnabled = true;
                     }
                     break;
                 case "Point":
                     var point = await _unitOfWork.PointRepository.GetById(id);
                     if (point != null)
                     {
+                        GraphButton.IsEnabled = true;
+
+                        var picket2 = await _unitOfWork.PicketRepository.GetById(point.IdPicket);
+                        _selectedPicket = picket2;
                         ObjectNameLabel.Content = "Точка " + point.Id;
                         //ObjectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "picket.png")));
                         SelectedObjectPanel.Tag = point;
                         SelectedObjectPanel.Visibility = Visibility.Visible;
                     }
                     break;
-                    break;
+                 
             }
         }
         else if (SelectedItem is Shape shape)
         {
             string idStr = shape.Tag.ToString();
             int id = int.Parse(idStr);
-            var square = _unitOfWork.SquareRepository.GetById(id).GetAwaiter().GetResult();
+            var square = await _unitOfWork.SquareRepository.GetById(id);
             if (square != null)
             {
                 ObjectNameLabel.Content = square.Name;
@@ -167,7 +188,7 @@ public partial class MainWindow : Window
             }
             else
             {
-                var profile = _unitOfWork.ProfileRepository.GetById(id).GetAwaiter().GetResult();
+                var profile = await _unitOfWork.ProfileRepository.GetById(id);
                 if (profile != null)
                 {
                     ObjectNameLabel.Content = profile.Name;
@@ -176,7 +197,7 @@ public partial class MainWindow : Window
                 }
                 else
                 {
-                    var picket = _unitOfWork.PicketRepository.GetById(id).GetAwaiter().GetResult();
+                    var picket = await _unitOfWork.PicketRepository.GetById(id);
                     if (picket != null)
                     {
                         ObjectNameLabel.Content = picket.Name;
@@ -242,6 +263,9 @@ public partial class MainWindow : Window
         PointsInPicket = new ObservableCollection<DisplayPoint>(displayPoints.Where(points => points.IdPicket == picketId));
 
         PointsDataGrid.ItemsSource = PointsInPicket;
+        _selectedPicket = await _unitOfWork.PicketRepository.GetById(picketId);
+        GraphButton.IsEnabled = true;
+
     }
 
     private async void ImportProjectButton_Click(object sender, RoutedEventArgs e)
@@ -265,6 +289,10 @@ public partial class MainWindow : Window
     private async Task LoadProjectsInTree()
     {
         List<Square> squares = await _unitOfWork.SquareRepository.GetAll();
+        if (SelectedProject == null)
+        {
+            return;
+        }
         ObservableCollection<Square> squaresCollection = new ObservableCollection<Square>(squares.Where(s => s.IdProject == SelectedProject.Id));
         List<Profile> profiles = await _unitOfWork.ProfileRepository.GetAll();
         ObservableCollection<Profile> profilesCollection = new ObservableCollection<Profile>(profiles.Where(p => squaresCollection.Any(s => s.Id == p.IdSquare)));
@@ -588,6 +616,24 @@ public partial class MainWindow : Window
     }
     private async void ReDrawButton_Click(object sender, RoutedEventArgs e)
     {
+        _zoomFactor = 1.0;
+        CanvasScaleTransform.ScaleX = _zoomFactor;
+        CanvasScaleTransform.ScaleY = _zoomFactor;
+
+        if (DrawingCanvas.RenderTransform is TransformGroup transformGroup)
+        {
+            var translate = transformGroup.Children.OfType<TranslateTransform>().FirstOrDefault();
+            if (translate != null)
+            {
+                translate.X = 0;
+                translate.Y = 0;
+            }
+        }
+
+        if (!(DrawingCanvas.RenderTransform is TransformGroup))
+        {
+            DrawingCanvas.RenderTransform = new ScaleTransform(1.0, 1.0);
+        }
         MainLayerDrawer.ClearCanvas();
         await DrawSquares();
     }
@@ -760,6 +806,7 @@ public partial class MainWindow : Window
 
             // Очищаем временные координаты
             tempCoordinates.Clear();
+            await LoadProjectsInTree();
         }
         else
         {
@@ -1160,5 +1207,123 @@ public partial class MainWindow : Window
             await DrawSquares();
         }
     }
+
+    private void GraphButton_Click(object sender, RoutedEventArgs e)
+    {
+        GravityAnomalyWindow graphWindow = new GravityAnomalyWindow(_unitOfWork, _selectedPicket);
+        graphWindow.ShowDialog();
+    }
+
+    private void ManageEntities_Click(object sender, RoutedEventArgs e)
+    {
+        EntityManagementWindow window = new EntityManagementWindow(_unitOfWork);
+        window.ShowDialog();
+    }
+
+    private void DrawingCanvas_MouseWheel(object sender, MouseWheelEventArgs e)
+    {
+        // Получаем позицию курсора относительно Canvas
+        var mousePosition = e.GetPosition(DrawingCanvas);
+
+        // Вычисляем новый масштаб
+        double zoomDelta = e.Delta > 0 ? ZoomSpeed : -ZoomSpeed;
+        double newZoom = _zoomFactor + zoomDelta;
+
+        // Ограничиваем масштаб
+        if (newZoom < MinZoom || newZoom > MaxZoom)
+            return;
+
+        _zoomFactor = newZoom;
+
+        // Применяем масштабирование
+        CanvasScaleTransform.ScaleX = _zoomFactor;
+        CanvasScaleTransform.ScaleY = _zoomFactor;
+
+        // Сохраняем точку под курсором (опционально, для более плавного зума)
+        double offsetX = mousePosition.X * (1 - _zoomFactor / (CanvasScaleTransform.ScaleX - zoomDelta));
+        double offsetY = mousePosition.Y * (1 - _zoomFactor / (CanvasScaleTransform.ScaleY - zoomDelta));
+
+        // Если нужно сдвинуть Canvas, используйте TranslateTransform
+        if (DrawingCanvas.RenderTransform is TransformGroup transformGroup)
+        {
+            var translate = transformGroup.Children.OfType<TranslateTransform>().FirstOrDefault();
+            if (translate != null)
+            {
+                translate.X += offsetX;
+                translate.Y += offsetY;
+            }
+        }
+        else
+        {
+            // Если TranslateTransform еще не добавлен, можно добавить его
+            TransformGroup group = new TransformGroup();
+            group.Children.Add(CanvasScaleTransform);
+            group.Children.Add(new TranslateTransform(offsetX, offsetY));
+            DrawingCanvas.RenderTransform = group;
+        }
+
+        e.Handled = true;
+    }
+
+    private void DrawingCanvas_MouseDown(object sender, MouseButtonEventArgs e)
+    {
+        if (e.LeftButton == MouseButtonState.Pressed && Keyboard.IsKeyDown(Key.LeftCtrl))
+        {
+            _isDragging = true;
+            _lastMousePosition = e.GetPosition(DrawingCanvas);
+            DrawingCanvas.CaptureMouse();
+        }
+    }
+
+    private void DrawingCanvas_MouseMove(object sender, MouseEventArgs e)
+    {
+        if (_isDragging)
+        {
+            var currentPosition = e.GetPosition(DrawingCanvas);
+            var offsetX = currentPosition.X - _lastMousePosition.X;
+            var offsetY = currentPosition.Y - _lastMousePosition.Y;
+
+            if (DrawingCanvas.RenderTransform is TransformGroup transformGroup)
+            {
+                var translate = transformGroup.Children.OfType<TranslateTransform>().FirstOrDefault();
+                if (translate != null)
+                {
+                    translate.X += offsetX;
+                    translate.Y += offsetY;
+                }
+            }
+            else
+            {
+                TransformGroup group = new TransformGroup();
+                group.Children.Add(CanvasScaleTransform);
+                group.Children.Add(new TranslateTransform(offsetX, offsetY));
+                DrawingCanvas.RenderTransform = group;
+            }
+
+            _lastMousePosition = currentPosition;
+        }
+    }
+
+    private void DrawingCanvas_MouseUp(object sender, MouseButtonEventArgs e)
+    {
+        if (_isDragging)
+        {
+            _isDragging = false;
+            DrawingCanvas.ReleaseMouseCapture();
+        }
+    }
+
+    private void CreateProjectButton_Click(object sender, RoutedEventArgs e)
+    {
+        if (MessageBox.Show("Создать новый проект?", "Подтверждение", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+        {
+            CreateProjectWindow createProjectWindow = new CreateProjectWindow(_unitOfWork, null);
+            if (createProjectWindow.ShowDialog() == true)
+            {
+                LoadProjectsInTree();
+            }
+        }
+    }
 }
+
 
