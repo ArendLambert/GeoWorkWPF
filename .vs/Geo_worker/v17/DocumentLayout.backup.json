@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\gravityanomalywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\gravityanomalywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\gravityanomalywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\gravityanomalywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\createprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\createprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\editequipmentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\gravityanomalywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\gravityanomalywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -99,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\editequipmentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\geo_worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\core\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\core\\models\\customertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{933E1149-937E-485C-B2B7-12CF4567D583}|Core\\Core.csproj|solutionrelative:core\\models\\customertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\gravityanomalywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\gravityanomalywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\editpointwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -257,10 +261,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\dataaccesslayer\\repositories\\accesslevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F8082AE-3163-49B9-966C-79C7E053231F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\accesslevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|solutionrelative:geo_worker\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96AEA39D-0116-4613-950F-844B4D903B3C}|Geo_worker\\Geo_worker.csproj|c:\\users\\cikor\\desktop\\geoworkwpf-master\\geo_worker\\controllers\\layerdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -437,58 +437,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 487,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateProjectWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\CreateProjectWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\CreateProjectWindow.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA/wEAAAACjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:47:27.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Project.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Project.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\Project.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Project.cs",
-              "RelativeToolTip": "Core\\Models\\Project.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:34:23.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\ProjectRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProjectRepository.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\ProjectRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\ProjectRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAMwBcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:38:09.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateProjectWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\CreateProjectWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\CreateProjectWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:43:37.192Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
@@ -496,269 +449,27 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Geo_worker\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAABMDAAAAAAAAAADgvygDAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAPAEAAAAAAAAAAD4vwEFAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T13:11:22.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EditEmployeeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\EditEmployeeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\EditEmployeeWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:11:14.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeeEntity.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\EmployeeEntity.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\EmployeeEntity.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T08:57:28.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Employee.cs",
-              "RelativeToolTip": "Core\\Models\\Employee.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA2wA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T02:20:09.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAASwBMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T08:01:25.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditEmployeeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\EditEmployeeWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\EditEmployeeWindow.xaml",
+              "DocumentIndex": 3,
+              "Title": "AuthWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AuthWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\AuthWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AuthWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\AuthWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:11:05.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T13:05:20.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Customer.cs",
-              "RelativeToolTip": "Core\\Models\\Customer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:10:32.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EditCustomerWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\EditCustomerWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:06:11.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EditCustomerTypeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerTypeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\EditCustomerTypeWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:10:13.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EntityManagementWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\EntityManagementWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\EntityManagementWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:05:07.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EntityManagementWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\EntityManagementWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\EntityManagementWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwJAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:05:18.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EditCustomerWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\EditCustomerWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:05:58.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditCustomerTypeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerTypeWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\EditCustomerTypeWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:10:01.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EditEquipmentWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\EditEquipmentWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\EditEquipmentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:12:51.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GravityAnomalyWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\GravityAnomalyWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\GravityAnomalyWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\GravityAnomalyWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\GravityAnomalyWindow.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAD4vxYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:42:33.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EditReportWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\EditReportWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\EditReportWindow.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:13:52.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-06T13:11:23.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SyntheticData.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\DataCreate\\SyntheticData.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataCreate\\SyntheticData.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\DataCreate\\SyntheticData.cs",
-              "RelativeToolTip": "DataAccessLayer\\DataCreate\\SyntheticData.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwJ8BAAB6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T10:54:46.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "EditEquipmentWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Geo_worker\\EditEquipmentWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml.cs",
-              "RelativeToolTip": "Geo_worker\\EditEquipmentWindow.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwCkAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:13:01.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EditReportWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\EditReportWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\EditReportWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:13:44.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Geo_worker.csproj",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\Geo_worker.csproj",
-              "RelativeDocumentMoniker": "Geo_worker\\Geo_worker.csproj",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\Geo_worker.csproj",
-              "RelativeToolTip": "Geo_worker\\Geo_worker.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-15T17:10:00.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 2,
               "Title": "GravityAnomalyWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\GravityAnomalyWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\GravityAnomalyWindow.xaml",
@@ -770,7 +481,288 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 1,
+              "Title": "GravityAnomalyWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\GravityAnomalyWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\GravityAnomalyWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\GravityAnomalyWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\GravityAnomalyWindow.xaml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAqwG4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:42:33.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Geo_worker.csproj",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\Geo_worker.csproj",
+              "RelativeDocumentMoniker": "Geo_worker\\Geo_worker.csproj",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\Geo_worker.csproj",
+              "RelativeToolTip": "Geo_worker\\Geo_worker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-15T17:10:00.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditEmployeeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\EditEmployeeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\EditEmployeeWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:11:14.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateProjectWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\CreateProjectWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\CreateProjectWindow.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA/wEAAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:47:27.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateProjectWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\CreateProjectWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\CreateProjectWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\CreateProjectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:43:37.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProjectRepository.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAMwBcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:38:09.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Project.cs",
+              "RelativeToolTip": "Core\\Models\\Project.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:34:23.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeEntity.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\EmployeeEntity.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Entities\\EmployeeEntity.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\EmployeeEntity.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T08:57:28.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Employee.cs",
+              "RelativeToolTip": "Core\\Models\\Employee.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA2wA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T02:20:09.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAASwBMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:01:25.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditEmployeeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\EditEmployeeWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEmployeeWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\EditEmployeeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:11:05.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Customer.cs",
+              "RelativeToolTip": "Core\\Models\\Customer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:10:32.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditCustomerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\EditCustomerWindow.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:06:11.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EditCustomerTypeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerTypeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\EditCustomerTypeWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:10:13.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EntityManagementWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\EntityManagementWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\EntityManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:05:07.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EntityManagementWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\EntityManagementWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EntityManagementWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\EntityManagementWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwJAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:05:18.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditCustomerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\EditCustomerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:05:58.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditCustomerTypeWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\EditCustomerTypeWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditCustomerTypeWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\EditCustomerTypeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:10:01.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EditEquipmentWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\EditEquipmentWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\EditEquipmentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:12:51.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditReportWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\EditReportWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\EditReportWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:13:52.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\MainWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-06T13:11:23.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SyntheticData.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\DataCreate\\SyntheticData.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataCreate\\SyntheticData.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\DataCreate\\SyntheticData.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataCreate\\SyntheticData.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwJ8BAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:54:46.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditEquipmentWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Geo_worker\\EditEquipmentWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditEquipmentWindow.xaml.cs",
+              "RelativeToolTip": "Geo_worker\\EditEquipmentWindow.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwCkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:13:01.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EditReportWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml",
+              "RelativeDocumentMoniker": "Geo_worker\\EditReportWindow.xaml",
+              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditReportWindow.xaml",
+              "RelativeToolTip": "Geo_worker\\EditReportWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:13:44.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "EditPointWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditPointWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\EditPointWindow.xaml",
@@ -781,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "CustomerType.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\CustomerType.cs",
               "RelativeDocumentMoniker": "Core\\Models\\CustomerType.cs",
@@ -789,12 +781,11 @@
               "RelativeToolTip": "Core\\Models\\CustomerType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T02:08:23.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T02:08:23.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Equipment.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Equipment.cs",
@@ -802,12 +793,11 @@
               "RelativeToolTip": "Core\\Models\\Equipment.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAkwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T03:40:36.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T03:40:36.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Report.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Report.cs",
@@ -815,12 +805,11 @@
               "RelativeToolTip": "Core\\Models\\Report.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T07:43:13.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T07:43:13.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "EditProfileWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditProfileWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\EditProfileWindow.xaml.cs",
@@ -832,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "EditPointWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditPointWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\EditPointWindow.xaml.cs",
@@ -844,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "EditPicketWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditPicketWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\EditPicketWindow.xaml",
@@ -855,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "EditPicketWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditPicketWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\EditPicketWindow.xaml.cs",
@@ -867,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "EditProfileWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditProfileWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\EditProfileWindow.xaml",
@@ -878,7 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "EditSquareWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditSquareWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\EditSquareWindow.xaml",
@@ -889,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "EditSquareWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\EditSquareWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\EditSquareWindow.xaml.cs",
@@ -901,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "BaseEditWindow.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\BaseEditWindow.cs",
               "RelativeDocumentMoniker": "Geo_worker\\BaseEditWindow.cs",
@@ -913,7 +902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ImportProjectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\ImportProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\ImportProjectWindow.xaml.cs",
@@ -925,7 +914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Square.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Square.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Square.cs",
@@ -937,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "SquareRepository.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\SquareRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\SquareRepository.cs",
@@ -949,7 +938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "ConfirmCoordinateWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\ConfirmCoordinateWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\ConfirmCoordinateWindow.xaml.cs",
@@ -961,7 +950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "ConfirmCoordinateWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\ConfirmCoordinateWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\ConfirmCoordinateWindow.xaml",
@@ -972,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "Picket.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Picket.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Picket.cs",
@@ -984,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Point.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Point.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Point.cs",
@@ -996,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Profile.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Profile.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Profile.cs",
@@ -1008,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "ObjectPropertiesWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\ObjectPropertiesWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\ObjectPropertiesWindow.xaml",
@@ -1019,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "ObjectPropertiesWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\ObjectPropertiesWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\ObjectPropertiesWindow.xaml.cs",
@@ -1031,7 +1020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "Position.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\Position.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Position.cs",
@@ -1043,7 +1032,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "ProfileRepository.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\ProfileRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProfileRepository.cs",
@@ -1055,7 +1044,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "ProfileCoordinate.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\ProfileCoordinate.cs",
               "RelativeDocumentMoniker": "Core\\Models\\ProfileCoordinate.cs",
@@ -1067,7 +1056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "PicketCoordinate.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\PicketCoordinate.cs",
               "RelativeDocumentMoniker": "Core\\Models\\PicketCoordinate.cs",
@@ -1079,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "AuditLogs.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\AuditLogs.cs",
               "RelativeDocumentMoniker": "Core\\Models\\AuditLogs.cs",
@@ -1091,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "AreaCoordinate.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\AreaCoordinate.cs",
               "RelativeDocumentMoniker": "Core\\Models\\AreaCoordinate.cs",
@@ -1103,7 +1092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "AccessLevel.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Models\\AccessLevel.cs",
               "RelativeDocumentMoniker": "Core\\Models\\AccessLevel.cs",
@@ -1115,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "BaseModel.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Core\\Abstractions\\BaseModel.cs",
               "RelativeDocumentMoniker": "Core\\Abstractions\\BaseModel.cs",
@@ -1127,7 +1116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "SelectObjectTypeWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\SelectObjectTypeWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\SelectObjectTypeWindow.xaml.cs",
@@ -1139,7 +1128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "AddPointsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AddPointsWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\AddPointsWindow.xaml",
@@ -1150,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "AuthWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AuthWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\AuthWindow.xaml.cs",
@@ -1162,7 +1151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "SelectObjectTypeWindow.xaml",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\SelectObjectTypeWindow.xaml",
               "RelativeDocumentMoniker": "Geo_worker\\SelectObjectTypeWindow.xaml",
@@ -1173,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "AuditLogsService.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Services\\AuditLogsService.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Services\\AuditLogsService.cs",
@@ -1185,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "AddPointsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AddPointsWindow.xaml.cs",
               "RelativeDocumentMoniker": "Geo_worker\\AddPointsWindow.xaml.cs",
@@ -1197,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Interfaces\\IRepository.cs",
@@ -1221,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "AccessLevelRepository.cs",
               "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\AccessLevelRepository.cs",
@@ -1230,17 +1219,6 @@
               "ViewState": "AgIAACAAAAAAAAAAAAAgwA4AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T06:41:22.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "AuthWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AuthWindow.xaml",
-              "RelativeDocumentMoniker": "Geo_worker\\AuthWindow.xaml",
-              "ToolTip": "C:\\Users\\cikor\\Desktop\\GeoWorkWPF-master\\Geo_worker\\AuthWindow.xaml",
-              "RelativeToolTip": "Geo_worker\\AuthWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-31T13:05:20.298Z"
             },
             {
               "$type": "Document",
@@ -1739,10 +1717,6 @@
           "DockedHeight": 201,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"

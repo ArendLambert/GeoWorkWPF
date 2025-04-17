@@ -59,6 +59,7 @@ public partial class MainWindow : Window
     private const double MaxZoom = 10.0;
     private System.Windows.Point _lastMousePosition;
     private bool _isDragging;
+    private double minScale = 3800;
 
     private List<PointDraw> tempCoordinates = new List<PointDraw>();
     public LayerDrawer MainLayerDrawer { get; private set; }
@@ -1235,32 +1236,40 @@ public partial class MainWindow : Window
 
         _zoomFactor = newZoom;
 
+        
         // Применяем масштабирование
         CanvasScaleTransform.ScaleX = _zoomFactor;
         CanvasScaleTransform.ScaleY = _zoomFactor;
+
+        //if (CanvasScaleTransform.ScaleX <= minScale || CanvasScaleTransform.ScaleY <= minScale)
+        //{
+        //    DrawingCanvas.Height = minScale;
+        //    DrawingCanvas.Width = minScale;
+        //    return;
+        //}
 
         // Сохраняем точку под курсором (опционально, для более плавного зума)
         double offsetX = mousePosition.X * (1 - _zoomFactor / (CanvasScaleTransform.ScaleX - zoomDelta));
         double offsetY = mousePosition.Y * (1 - _zoomFactor / (CanvasScaleTransform.ScaleY - zoomDelta));
 
         // Если нужно сдвинуть Canvas, используйте TranslateTransform
-        if (DrawingCanvas.RenderTransform is TransformGroup transformGroup)
-        {
-            var translate = transformGroup.Children.OfType<TranslateTransform>().FirstOrDefault();
-            if (translate != null)
-            {
-                translate.X += offsetX;
-                translate.Y += offsetY;
-            }
-        }
-        else
-        {
-            // Если TranslateTransform еще не добавлен, можно добавить его
-            TransformGroup group = new TransformGroup();
-            group.Children.Add(CanvasScaleTransform);
-            group.Children.Add(new TranslateTransform(offsetX, offsetY));
-            DrawingCanvas.RenderTransform = group;
-        }
+        //if (DrawingCanvas.RenderTransform is TransformGroup transformGroup)
+        //{
+        //    var translate = transformGroup.Children.OfType<TranslateTransform>().FirstOrDefault();
+        //    if (translate != null)
+        //    {
+        //        translate.X += offsetX;
+        //        translate.Y += offsetY;
+        //    }
+        //}
+        //else
+        //{
+        //    // Если TranslateTransform еще не добавлен, можно добавить его
+        //    TransformGroup group = new TransformGroup();
+        //    group.Children.Add(CanvasScaleTransform);
+        //    group.Children.Add(new TranslateTransform(offsetX, offsetY));
+        //    DrawingCanvas.RenderTransform = group;
+        //}
 
         e.Handled = true;
     }
@@ -1270,7 +1279,7 @@ public partial class MainWindow : Window
         if (e.LeftButton == MouseButtonState.Pressed && Keyboard.IsKeyDown(Key.LeftCtrl))
         {
             _isDragging = true;
-            _lastMousePosition = e.GetPosition(DrawingCanvas);
+            _lastMousePosition = e.GetPosition(this);
             DrawingCanvas.CaptureMouse();
         }
     }
@@ -1279,7 +1288,7 @@ public partial class MainWindow : Window
     {
         if (_isDragging)
         {
-            var currentPosition = e.GetPosition(DrawingCanvas);
+            var currentPosition = e.GetPosition(this);
             var offsetX = currentPosition.X - _lastMousePosition.X;
             var offsetY = currentPosition.Y - _lastMousePosition.Y;
 

@@ -68,7 +68,7 @@ namespace Geo_worker {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Geo_worker;component/entitymanagementwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Geo_worker;V1.0.0.0;component/entitymanagementwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EntityManagementWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
