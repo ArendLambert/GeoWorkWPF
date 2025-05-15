@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -60,6 +61,9 @@ public partial class MainWindow : Window
     private System.Windows.Point _lastMousePosition;
     private bool _isDragging;
     private double minScale = 3800;
+    private double _currentAngle = 0;
+    private int secundsAnimationDuration = 3;
+    private string backgroundsrc;
 
     private List<PointDraw> tempCoordinates = new List<PointDraw>();
     public LayerDrawer MainLayerDrawer { get; private set; }
@@ -70,6 +74,8 @@ public partial class MainWindow : Window
         MainLayerDrawer = new LayerDrawer(DrawingCanvas);
         MessageBox.Show(MainLayerDrawer.ToString());
         string mainimgsrc = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "1.jpg");
+        string backgroundsrc = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "background.jpg");
+        this.backgroundsrc = backgroundsrc;
         //mainImage.Source = new BitmapImage(new Uri(mainimgsrc, UriKind.Absolute));
         LockBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "lock.png"), UriKind.Absolute)));
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
@@ -95,6 +101,8 @@ public partial class MainWindow : Window
 
         MainLayerDrawer = new LayerDrawer(DrawingCanvas);
         string mainimgsrc = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "1.jpg");
+        string backgroundsrc = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "background.jpg");
+        this.backgroundsrc = backgroundsrc;
         //mainImage.Source = new BitmapImage(new Uri(mainimgsrc, UriKind.Absolute));
         LockBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "lock.png"), UriKind.Absolute)));
         EyeBrush = new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "eye.png"), UriKind.Absolute)));
@@ -636,6 +644,7 @@ public partial class MainWindow : Window
             DrawingCanvas.RenderTransform = new ScaleTransform(1.0, 1.0);
         }
         MainLayerDrawer.ClearCanvas();
+        DrawingCanvas.Background = Brushes.Red;
         await DrawSquares();
     }
 
@@ -1038,15 +1047,21 @@ public partial class MainWindow : Window
 
     private async void LoadSyntheticDataButton_Click(object sender, RoutedEventArgs e)
     {
-        await DBAdding();
-        MessageBox.Show("Данные загружены");
+        if(MessageBox.Show("Вы уверены, что хотите загрузить тестовые данные?", "Загрузка", MessageBoxButton.OKCancel, MessageBoxImage.Question) == MessageBoxResult.OK)
+        {
+            await DBAdding();
+            MessageBox.Show("Данные загружены");
+        }
 
     }
 
     private async void DeleteSyntheticDataButton_Click(object sender, RoutedEventArgs e)
     {
-        await DBClear();
-        MessageBox.Show("Данные удалены!!");
+        if (MessageBox.Show("Вы уверены, что хотите удалить ВСЕ данные?", "Удаление", MessageBoxButton.OKCancel, MessageBoxImage.Warning) == MessageBoxResult.OK)
+        {
+            await DBClear();
+            MessageBox.Show("Данные удалены!!");
+        }  
     }
 
 
@@ -1159,7 +1174,6 @@ public partial class MainWindow : Window
                     if (square != null)
                     {
                         EditSquareWindow squareWindow = new EditSquareWindow(_unitOfWork, square);
-                        MessageBox.Show("!!!");
                         if (squareWindow.ShowDialog() == true)
                         {
                             await LoadProjectsInTree();
@@ -1332,6 +1346,115 @@ public partial class MainWindow : Window
                 LoadProjectsInTree();
             }
         }
+    }
+
+    private void FlipButton_Click(object sender, RoutedEventArgs e)
+    {
+        double angleIncrement = 360;
+        double centerX = DrawingCanvas.ActualWidth / 2;
+        double centerY = DrawingCanvas.ActualHeight / 2;
+        RandomGradientWithAnimation();
+        _currentAngle += angleIncrement;
+        RotateTransform rotateTransform = DrawingCanvas.RenderTransform is TransformGroup group
+        ? group.Children.OfType<RotateTransform>().FirstOrDefault() ?? new RotateTransform()
+        : new RotateTransform();
+
+        if (!(DrawingCanvas.RenderTransform is TransformGroup))
+        {
+            TransformGroup group2 = new TransformGroup();
+            group2.Children.Add(CanvasScaleTransform);
+            group2.Children.Add(rotateTransform);
+            DrawingCanvas.RenderTransform = group2;
+        }
+        rotateTransform.CenterX = centerX;
+        rotateTransform.CenterY = centerY;
+        DoubleAnimation animation = new DoubleAnimation
+        {
+            To = _currentAngle,
+            Duration = TimeSpan.FromSeconds(secundsAnimationDuration),
+            FillBehavior = FillBehavior.HoldEnd
+        };
+        rotateTransform.BeginAnimation(RotateTransform.AngleProperty, animation);
+    }
+
+    private void RandomGradientWithAnimation()
+    {
+        Random random = new Random();
+
+        // Создаем LinearGradientBrush с 3 остановками
+        LinearGradientBrush gradientBrush = new LinearGradientBrush
+        {
+            StartPoint = new System.Windows.Point(0, 0),
+            EndPoint = new System.Windows.Point(1, 1)
+        };
+
+        // Добавляем GradientStops с начальными цветами
+        for (int i = 0; i < 3; i++)
+        {
+            Color startColor = Color.FromRgb(
+                (byte)random.Next(256),
+                (byte)random.Next(256),
+                (byte)random.Next(256)
+            );
+            double offset = (double)i / 2.0; // 0.0, 0.5, 1.0
+            gradientBrush.GradientStops.Add(new GradientStop(startColor, offset));
+        }
+
+        DrawingCanvas.Background = gradientBrush;
+
+        // Анимация каждого GradientStop отдельно
+        foreach (GradientStop stop in gradientBrush.GradientStops)
+        {
+            Color targetColor = Color.FromRgb(
+                (byte)random.Next(256),
+                (byte)random.Next(256),
+                (byte)random.Next(256)
+            );
+
+            ColorAnimation animation = new ColorAnimation
+            {
+                To = targetColor,
+                Duration = TimeSpan.FromSeconds(secundsAnimationDuration),
+                FillBehavior = FillBehavior.HoldEnd
+            };
+
+            // Анимируем напрямую GradientStop.Color
+            stop.BeginAnimation(GradientStop.ColorProperty, animation);
+        }
+    }
+
+    private void BackgroundButton_Click(object sender, RoutedEventArgs e)
+    {
+        ImageBrush imageBrush = new ImageBrush();
+        imageBrush.ImageSource = new BitmapImage(new Uri(backgroundsrc));
+        imageBrush.Stretch = Stretch.UniformToFill; // или Fill, Uniform, None — по желанию
+
+        DrawingCanvas.Background = imageBrush;
+
+        double angleIncrement = 360;
+        double centerX = DrawingCanvas.ActualWidth / 2;
+        double centerY = DrawingCanvas.ActualHeight / 2;
+        _currentAngle += angleIncrement;
+        RotateTransform rotateTransform = DrawingCanvas.RenderTransform is TransformGroup group
+        ? group.Children.OfType<RotateTransform>().FirstOrDefault() ?? new RotateTransform()
+        : new RotateTransform();
+
+        if (!(DrawingCanvas.RenderTransform is TransformGroup))
+        {
+            TransformGroup group2 = new TransformGroup();
+            group2.Children.Add(CanvasScaleTransform);
+            group2.Children.Add(rotateTransform);
+            DrawingCanvas.RenderTransform = group2;
+        }
+        rotateTransform.CenterX = centerX;
+        rotateTransform.CenterY = centerY;
+        DoubleAnimation animation = new DoubleAnimation
+        {
+            To = _currentAngle,
+            Duration = TimeSpan.FromSeconds(secundsAnimationDuration),
+            FillBehavior = FillBehavior.HoldEnd
+        };
+        rotateTransform.BeginAnimation(RotateTransform.AngleProperty, animation);
     }
 }
 

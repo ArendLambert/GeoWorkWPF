@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
 
         <!-- Левый блок -->
-        <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Background="LightBlue">
+        <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Background="LightBlue" Panel.ZIndex="1">
             <StackPanel VerticalAlignment="Top">
                 <!-- Первая группа кнопок -->
                 <Grid>
@@ -177,7 +177,7 @@
         </Grid>
 
         <!-- Верхний блок -->
-        <Grid Grid.Column="1" Grid.Row="0" Background="White" Grid.ColumnSpan="2" Height="50">
+        <Grid Grid.Column="1" Grid.Row="0" Background="White" Grid.ColumnSpan="2" Height="50" Panel.ZIndex="1">
             <StackPanel>
                 <TextBox x:Name="SquareNameTextBox" Text="Площадь 1" FontSize="14" Height="18" IsEnabled="False"/>
                 <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible">
@@ -213,8 +213,8 @@
                         <Button x:Name="DeleteSyntheticDataButton" Content="⛝" Grid.Column="2" MinWidth="25" MinHeight="25" Click="DeleteSyntheticDataButton_Click"/>
                         <Button x:Name="DataEditButton" Content="🛠" Grid.Column="3" MinWidth="25" MinHeight="25" Click="ManageEntities_Click"/>
                         <Button x:Name="CreateProjectButton" Content="✎" Grid.Column="4" MinWidth="25" MinHeight="25" Click="CreateProjectButton_Click"/>
-                        <Button Content="♰" Grid.Column="5" MinWidth="25" MinHeight="25"/>
-                        <Button Content="♰" Grid.Column="6" MinWidth="25" MinHeight="25"/>
+                        <Button x:Name="FlipButton" Content="☈" Grid.Column="5" MinWidth="25" MinHeight="25" Click="FlipButton_Click"/>
+                        <Button x:Name="BackgroundButton" Content="☮" Grid.Column="6" MinWidth="25" MinHeight="25" Click="BackgroundButton_Click"/>
                         <Button Content="♰" Grid.Column="7" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="8" MinWidth="25" MinHeight="25"/>
                         <Button Content="♰" Grid.Column="9" MinWidth="25" MinHeight="25"/>
@@ -241,8 +241,8 @@
         <!-- Центральный блок -->
         <Grid Grid.Column="1" Grid.Row="1" Background="#FF5F5F5F" Margin="0,0,50,40" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="22*"/>
-                <ColumnDefinition Width="663*"/>
+                <ColumnDefinition Width="68*"/>
+                <ColumnDefinition Width="69*"/>
             </Grid.ColumnDefinitions>
             <Canvas x:Name="DrawingCanvas" MouseRightButtonDown="DrawingCanvas_MouseRightButtonDown" Height="767" Background="red" VerticalAlignment="Top" OpacityMask="Red" Grid.ColumnSpan="2" MouseWheel="DrawingCanvas_MouseWheel">
                 <Canvas.RenderTransform>
